@@ -7,8 +7,8 @@
     	document.getElementById("sub-menu-link-text-4").classList.add("is-startseite");
     	document.getElementById("sub-menu-link-text-5").classList.add("is-startseite");
     	document.getElementById("sub-menu-link-text-6").classList.add("is-startseite");
-   	document.getElementById("subnav-bg-filled").style.display = "block";
-    	document.getElementById("subnav-bg-outline").style.display = "none";    
+   	document.getElementById("subnav-bg-filled").style.display = "none";
+    	document.getElementById("subnav-bg-outline").style.display = "block";    
 })();
 
 // If Scrolling
@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', function(e) {
     	document.getElementById("sub-menu-link-text-4").classList.remove("is-startseite");
     	document.getElementById("sub-menu-link-text-5").classList.remove("is-startseite");
     	document.getElementById("sub-menu-link-text-6").classList.remove("is-startseite");
-	document.getElementById("subnav-bg-filled").style.display = "none";
-    	document.getElementById("subnav-bg-outline").style.display = "block"; 
+	document.getElementById("subnav-bg-filled").style.display = "block";
+    	document.getElementById("subnav-bg-outline").style.display = "none"; 
         }
      
         if(currentScroll <= $( window ).height()) {  
@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', function(e) {
     	document.getElementById("sub-menu-link-text-4").classList.add("is-startseite");
     	document.getElementById("sub-menu-link-text-5").classList.add("is-startseite");
     	document.getElementById("sub-menu-link-text-6").classList.add("is-startseite");
-   	document.getElementById("subnav-bg-filled").style.display = "block";
-    	document.getElementById("subnav-bg-outline").style.display = "none";  
+   	document.getElementById("subnav-bg-filled").style.display = "none";
+    	document.getElementById("subnav-bg-outline").style.display = "block";  
         }
      
     })
