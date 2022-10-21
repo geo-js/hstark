@@ -16,6 +16,9 @@ Weglot.on('initialized', ()=>{
 	// get the current active language
 	const currentLang = Weglot.getCurrentLang();
 	console.log ("currentLang:" + currentLang);
+
+	// run function CountryCheckAndSet
+	CountryCheckAndSet();
 });
 
 // on click .country-de
@@ -89,7 +92,8 @@ $('.country-us').click(function() {
 });
 
 
-
+// function CountryCheckAndSet
+function CountryCheckAndSet() {
 // ipapi.co
 $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
   console.log("Country by ipapi: " + ipapicountrycode)
@@ -190,3 +194,4 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon.is-us').addClass('is-active');
 	}
 })
+}
