@@ -36,6 +36,98 @@ $('.english-global-lang-switcher').click(function() {
 	$('.language-switch-popup').toggleClass('is-active');
 });
 
+// English US Top Switcher
+$('.english-us-lang-switcher').click(function() {
+	Weglot.switchTo('en');
+	currentLang = Weglot.getCurrentLang();
+
+	$('.country-item').removeClass('is-active');
+	$('.country-us').addClass('is-active');
+
+	$('.is-language-switch').text('United States');
+
+	// flags
+	$('.footer_language-icon').removeClass('is-active');
+	$('.footer_language-icon.is-us').addClass('is-active');
+
+	Cookies.set('setManualDE', 'false', { expires: 1 })
+	Cookies.set('setManualEN', 'true', { expires: 1 })
+	Cookies.set('setManualAT', 'false', { expires: 1 })
+	Cookies.set('setManualCH', 'false', { expires: 1 })
+	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
+
+	$('.language-switch-popup').toggleClass('is-active');
+});
+
+// Native DE Top Switcher
+$('.native-lang-de').click(function() {
+	Weglot.switchTo('de');
+	currentLang = Weglot.getCurrentLang();
+
+	$('.country-item').removeClass('is-active');
+	$('.country-de').addClass('is-active');
+
+	$('.is-language-switch').text('Deutschland');
+
+	// flags
+	$('.footer_language-icon').removeClass('is-active');
+	$('.footer_language-icon.is-de').addClass('is-active');
+
+	Cookies.set('setManualDE', 'true', { expires: 1 })
+	Cookies.set('setManualEN', 'false', { expires: 1 })
+	Cookies.set('setManualAT', 'false', { expires: 1 })
+	Cookies.set('setManualCH', 'false', { expires: 1 })
+	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
+
+	$('.language-switch-popup').toggleClass('is-active');
+});
+
+// Native AT Top Switcher
+$('.native-lang-at').click(function() {
+	Weglot.switchTo('de');
+	currentLang = Weglot.getCurrentLang();
+
+	$('.country-item').removeClass('is-active');
+	$('.country-at').addClass('is-active');
+
+	$('.is-language-switch').text('Österreich');
+
+	// flags
+	$('.footer_language-icon').removeClass('is-active');
+	$('.footer_language-icon.is-at').addClass('is-active');
+
+	Cookies.set('setManualDE', 'false', { expires: 1 })
+	Cookies.set('setManualEN', 'false', { expires: 1 })
+	Cookies.set('setManualAT', 'true', { expires: 1 })
+	Cookies.set('setManualCH', 'false', { expires: 1 })
+	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
+
+	$('.language-switch-popup').toggleClass('is-active');
+});
+
+// Native CH Top Switcher
+$('.native-lang-ch').click(function() {
+	Weglot.switchTo('de');
+	currentLang = Weglot.getCurrentLang();
+
+	$('.country-item').removeClass('is-active');
+	$('.country-ch').addClass('is-active');
+
+	$('.is-language-switch').text('Schweiz');
+
+	// flags
+	$('.footer_language-icon').removeClass('is-active');
+	$('.footer_language-icon.is-ch').addClass('is-active');
+
+	Cookies.set('setManualDE', 'false', { expires: 1 })
+	Cookies.set('setManualEN', 'false', { expires: 1 })
+	Cookies.set('setManualAT', 'false', { expires: 1 })
+	Cookies.set('setManualCH', 'true', { expires: 1 })
+	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
+
+	$('.language-switch-popup').toggleClass('is-active');
+});
+
 
 // on click .country-de
 $('.country-de').click(function() {
@@ -57,6 +149,12 @@ $('.country-de').click(function() {
 	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
+
+	$('.english-global-lang-switcher').removeClass('is-active');
+	$('.english-us-lang-switcher').removeClass('is-active');
+	$('.native-lang-de').addClass('is-active');
+	$('.native-lang-at').removeClass('is-active');
+	$('.native-lang-ch').removeClass('is-active');
 });
 
 // on click .country-at
@@ -79,6 +177,12 @@ $('.country-at').click(function() {
 	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
+
+	$('.english-global-lang-switcher').removeClass('is-active');
+	$('.english-us-lang-switcher').removeClass('is-active');
+	$('.native-lang-de').removeClass('is-active');
+	$('.native-lang-at').addClass('is-active');
+	$('.native-lang-ch').removeClass('is-active');
 });
 
 // on click .country-ch
@@ -101,6 +205,12 @@ $('.country-ch').click(function() {
 	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
+
+	$('.english-global-lang-switcher').removeClass('is-active');
+	$('.english-us-lang-switcher').removeClass('is-active');
+	$('.native-lang-de').removeClass('is-active');
+	$('.native-lang-at').removeClass('is-active');
+	$('.native-lang-ch').addClass('is-active');
 });
 	
 // on click .country-us
@@ -124,6 +234,12 @@ $('.country-us').click(function() {
 	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
+
+	$('.english-global-lang-switcher').removeClass('is-active');
+	$('.english-us-lang-switcher').addClass('is-active');
+	$('.native-lang-de').removeClass('is-active');
+	$('.native-lang-at').removeClass('is-active');
+	$('.native-lang-ch').removeClass('is-active');
 });
 
 // on click .country-global
@@ -148,9 +264,11 @@ $('.country-global').click(function() {
 
 	$('.language-switch-popup').toggleClass('is-active');
 
-	$('.english-global-lang-switcher').toggleClass('is-active');
+	$('.english-global-lang-switcher').addClass('is-active');
 	$('.english-us-lang-switcher').removeClass('is-active');
 	$('.native-lang-de').removeClass('is-active');
+	$('.native-lang-at').removeClass('is-active');
+	$('.native-lang-ch').removeClass('is-active');
 });
 
 
@@ -174,6 +292,12 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-de').toggleClass('is-active');
+
+		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-us-lang-switcher').removeClass('is-active');
+		$('.native-lang-de').addClass('is-active');
+		$('.native-lang-at').removeClass('is-active');
+		$('.native-lang-ch').removeClass('is-active');
 	}
 	// if currentCountry is DE and Cookies are not set
 	else if (currentCountry === 'DE' && Cookies.get('setManualDE') === undefined && Cookies.get('setManualEN') === undefined && Cookies.get('setManualAT') === undefined && Cookies.get('setManualCH') === undefined && Cookies.get('setManualGLOBAL') === undefined) {
@@ -187,6 +311,12 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-de').toggleClass('is-active');
+
+		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-us-lang-switcher').removeClass('is-active');
+		$('.native-lang-de').addClass('is-active');
+		$('.native-lang-at').removeClass('is-active');
+		$('.native-lang-ch').removeClass('is-active');
 	}
 
 	if (Cookies.get('setManualDE') === 'true') {
@@ -200,6 +330,12 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-de').addClass('is-active');
+
+		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-us-lang-switcher').removeClass('is-active');
+		$('.native-lang-de').addClass('is-active');
+		$('.native-lang-at').removeClass('is-active');
+		$('.native-lang-ch').removeClass('is-active');
 	}
 
 	// Österreich
@@ -214,6 +350,12 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-at').addClass('is-active');
+
+		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-us-lang-switcher').removeClass('is-active');
+		$('.native-lang-de').removeClass('is-active');
+		$('.native-lang-at').addClass('is-active');
+		$('.native-lang-ch').removeClass('is-active');
 	}
 	// if currentCountry is AT and Cookies are not set
 	else if (currentCountry === 'AT' && Cookies.get('setManualDE') === undefined && Cookies.get('setManualEN') === undefined && Cookies.get('setManualAT') === undefined && Cookies.get('setManualCH') === undefined && Cookies.get('setManualGLOBAL') === undefined) {
@@ -227,6 +369,12 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-at').addClass('is-active');
+
+		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-us-lang-switcher').removeClass('is-active');
+		$('.native-lang-de').removeClass('is-active');
+		$('.native-lang-at').addClass('is-active');
+		$('.native-lang-ch').removeClass('is-active');
 	}
 
 	if (Cookies.get('setManualAT') === 'true') {
@@ -240,6 +388,12 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-at').addClass('is-active');
+
+		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-us-lang-switcher').removeClass('is-active');
+		$('.native-lang-de').removeClass('is-active');
+		$('.native-lang-at').addClass('is-active');
+		$('.native-lang-ch').removeClass('is-active');
 	}
 
 	// Schweiz
@@ -254,6 +408,12 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-ch').addClass('is-active');
+
+		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-us-lang-switcher').removeClass('is-active');
+		$('.native-lang-de').removeClass('is-active');
+		$('.native-lang-at').removeClass('is-active');
+		$('.native-lang-ch').addClass('is-active');
 	}
 
 	// if currentCountry is CH and Cookies are not set
@@ -268,6 +428,12 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-ch').addClass('is-active');
+
+		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-us-lang-switcher').removeClass('is-active');
+		$('.native-lang-de').removeClass('is-active');
+		$('.native-lang-at').removeClass('is-active');
+		$('.native-lang-ch').addClass('is-active');
 	}
 
 	if (Cookies.get('setManualCH') === 'true') {
@@ -281,6 +447,12 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-ch').addClass('is-active');
+
+		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-us-lang-switcher').removeClass('is-active');
+		$('.native-lang-de').removeClass('is-active');
+		$('.native-lang-at').removeClass('is-active');
+		$('.native-lang-ch').addClass('is-active');
 	}
 
 	// United States
@@ -295,6 +467,12 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-us').addClass('is-active');
+
+		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-us-lang-switcher').addClass('is-active');
+		$('.native-lang-de').removeClass('is-active');
+		$('.native-lang-at').removeClass('is-active');
+		$('.native-lang-ch').removeClass('is-active');
 	}
 
 	// if currentCountry is US and Cookies are not set
@@ -309,6 +487,12 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-us').addClass('is-active');
+
+		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-us-lang-switcher').addClass('is-active');
+		$('.native-lang-de').removeClass('is-active');
+		$('.native-lang-at').removeClass('is-active');
+		$('.native-lang-ch').removeClass('is-active');
 	}
 
 	if (Cookies.get('setManualEN') === 'true') {
@@ -322,6 +506,12 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-us').addClass('is-active');
+
+		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-us-lang-switcher').addClass('is-active');
+		$('.native-lang-de').removeClass('is-active');
+		$('.native-lang-at').removeClass('is-active');
+		$('.native-lang-ch').removeClass('is-active');
 	}
 
 	// Global
@@ -338,9 +528,11 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-global').addClass('is-active');
 
-		$('.english-global-lang-switcher').toggleClass('is-active');
+		$('.english-global-lang-switcher').addClass('is-active');
 		$('.english-us-lang-switcher').removeClass('is-active');
 		$('.native-lang-de').removeClass('is-active');
+		$('.native-lang-at').removeClass('is-active');
+		$('.native-lang-ch').removeClass('is-active');
 	}
 
 	// if currentCountry is not DE, AT, CH, US and Cookies are not set
@@ -356,9 +548,11 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-global').addClass('is-active');
 
-		$('.english-global-lang-switcher').toggleClass('is-active');
+		$('.english-global-lang-switcher').addClass('is-active');
 		$('.english-us-lang-switcher').removeClass('is-active');
 		$('.native-lang-de').removeClass('is-active');
+		$('.native-lang-at').removeClass('is-active');
+		$('.native-lang-ch').removeClass('is-active');
 	}
 
 	if (Cookies.get('setManualGLOBAL') === 'true') {
@@ -373,9 +567,11 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-global').addClass('is-active');
 
-		$('.english-global-lang-switcher').toggleClass('is-active');
+		$('.english-global-lang-switcher').addClass('is-active');
 		$('.english-us-lang-switcher').removeClass('is-active');
 		$('.native-lang-de').removeClass('is-active');
+		$('.native-lang-at').removeClass('is-active');
+		$('.native-lang-ch').removeClass('is-active');
 	}
 })
 
