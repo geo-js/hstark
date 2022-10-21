@@ -1,16 +1,3 @@
-// open weglot popup
-$(document).ready(function() {
-	// on click on .footer_language-trigger add class is-active to .language-switch-popup
-	$('.footer_language-trigger').click(function() {
-		$('.language-switch-popup').toggleClass('is-active');
-	});
-	// when hover leave .language-switch-popup remove class is-active
-	$('.language-switch-popup').mouseleave(function() {
-		$('.language-switch-popup').removeClass('is-active');
-	}
-	);
-});
-
 // init Weglot
 Weglot.initialize({
 	api_key: 'wg_21e28f0fa5231b99b05a6eecffaee81f3'
@@ -22,8 +9,7 @@ Weglot.on('initialized', ()=>{
 	const currentLang = Weglot.getCurrentLang();
 	console.log ("currentLang:" + currentLang);
 
-	// run function CountryCheckAndSet
-	// CountryCheckAndSet();
+
 });
 
 // on click .country-de
@@ -140,7 +126,7 @@ $('.country-global').click(function() {
 
 
 // function CountryCheckAndSet
-// function CountryCheckAndSet() {
+function CountryCheckAndSet() {
 // ipapi.co
 $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
   console.log("Country by ipapi: " + ipapicountrycode)
@@ -265,4 +251,19 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon.is-global').addClass('is-active');
 	}
 })
-// }
+}
+
+// open weglot popup
+$(document).ready(function() {
+	// on click on .footer_language-trigger add class is-active to .language-switch-popup
+	$('.footer_language-trigger').click(function() {
+		$('.language-switch-popup').toggleClass('is-active');
+	});
+	// when hover leave .language-switch-popup remove class is-active
+	$('.language-switch-popup').mouseleave(function() {
+		$('.language-switch-popup').removeClass('is-active');
+	}
+	);
+		// run function CountryCheckAndSet
+		CountryCheckAndSet();
+});
