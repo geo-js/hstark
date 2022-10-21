@@ -32,6 +32,8 @@ $('.country-de').click(function() {
 	Cookies.set('setManualEN', 'false', { expires: 1 })
 	Cookies.set('setManualAT', 'false', { expires: 1 })
 	Cookies.set('setManualCH', 'false', { expires: 1 })
+
+	$('.language-switch-popup').toggleClass('is-active');
 });
 
 // on click .country-at
@@ -47,6 +49,8 @@ $('.country-at').click(function() {
 	Cookies.set('setManualEN', 'false', { expires: 1 })
 	Cookies.set('setManualAT', 'true', { expires: 1 })
 	Cookies.set('setManualCH', 'false', { expires: 1 })
+
+	$('.language-switch-popup').toggleClass('is-active');
 });
 
 // on click .country-ch
@@ -62,6 +66,8 @@ $('.country-ch').click(function() {
 	Cookies.set('setManualEN', 'false', { expires: 1 })
 	Cookies.set('setManualAT', 'false', { expires: 1 })
 	Cookies.set('setManualCH', 'true', { expires: 1 })
+
+	$('.language-switch-popup').toggleClass('is-active');
 });
 	
 // on click .country-us
@@ -78,6 +84,8 @@ $('.country-us').click(function() {
 	Cookies.set('setManualEN', 'true', { expires: 1 })
 	Cookies.set('setManualAT', 'false', { expires: 1 })
 	Cookies.set('setManualCH', 'false', { expires: 1 })
+
+	$('.language-switch-popup').toggleClass('is-active');
 });
 
 
