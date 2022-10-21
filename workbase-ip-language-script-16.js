@@ -165,6 +165,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Deutschland');
+		$('.country-item').removeClass('is-active');
+		$('.country-de').addClass('is-active');
 
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
@@ -177,6 +179,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Österreich');
+		$('.country-item').removeClass('is-active');
+		$('.country-at').addClass('is-active');
 
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
@@ -201,6 +205,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Österreich');
+		$('.country-item').removeClass('is-active');
+		$('.country-at').addClass('is-active');
 
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
@@ -213,6 +219,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Schweiz');
+		$('.country-item').removeClass('is-active');
+		$('.country-ch').addClass('is-active');
 
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
@@ -238,6 +246,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Schweiz');
+		$('.country-item').removeClass('is-active');
+		$('.country-ch').addClass('is-active');
 
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
@@ -250,6 +260,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('United States');
+		$('.country-item').removeClass('is-active');
+		$('.country-us').addClass('is-active');
 
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
@@ -275,6 +287,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('United States');
+		$('.country-item').removeClass('is-active');
+		$('.country-us').addClass('is-active');
 
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
@@ -288,6 +302,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Global');
+		$('.country-item').removeClass('is-active');
+		$('.country-global').addClass('is-active');
 
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
@@ -313,6 +329,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Global');
+		$('.country-item').removeClass('is-active');
+		$('.country-global').addClass('is-active');
 
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
