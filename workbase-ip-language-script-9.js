@@ -23,7 +23,7 @@ Weglot.on('initialized', ()=>{
 	console.log ("currentLang:" + currentLang);
 
 	// run function CountryCheckAndSet
-	CountryCheckAndSet();
+	// CountryCheckAndSet();
 });
 
 // on click .country-de
@@ -140,7 +140,7 @@ $('.country-global').click(function() {
 
 
 // function CountryCheckAndSet
-function CountryCheckAndSet() {
+// function CountryCheckAndSet() {
 // ipapi.co
 $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
   console.log("Country by ipapi: " + ipapicountrycode)
@@ -265,4 +265,4 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon.is-global').addClass('is-active');
 	}
 })
-}
+// }
