@@ -43,6 +43,7 @@ $('.country-de').click(function() {
 	Cookies.set('setManualEN', 'false', { expires: 1 })
 	Cookies.set('setManualAT', 'false', { expires: 1 })
 	Cookies.set('setManualCH', 'false', { expires: 1 })
+	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
 });
@@ -64,6 +65,7 @@ $('.country-at').click(function() {
 	Cookies.set('setManualEN', 'false', { expires: 1 })
 	Cookies.set('setManualAT', 'true', { expires: 1 })
 	Cookies.set('setManualCH', 'false', { expires: 1 })
+	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
 });
@@ -85,6 +87,7 @@ $('.country-ch').click(function() {
 	Cookies.set('setManualEN', 'false', { expires: 1 })
 	Cookies.set('setManualAT', 'false', { expires: 1 })
 	Cookies.set('setManualCH', 'true', { expires: 1 })
+	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
 });
@@ -107,6 +110,30 @@ $('.country-us').click(function() {
 	Cookies.set('setManualEN', 'true', { expires: 1 })
 	Cookies.set('setManualAT', 'false', { expires: 1 })
 	Cookies.set('setManualCH', 'false', { expires: 1 })
+	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
+
+	$('.language-switch-popup').toggleClass('is-active');
+});
+
+// on click .country-global
+$('.country-global').click(function() {
+	Weglot.switchTo('en');
+	currentLang = Weglot.getCurrentLang();
+
+	$('.country-item').removeClass('is-active');
+	$(this).addClass('is-active');
+
+	$('.is-language-switch').text('Global');
+
+	// flags
+	$('.footer_language-icon').removeClass('is-active');
+	$('.footer_language-icon.is-global').addClass('is-active');
+
+	Cookies.set('setManualDE', 'false', { expires: 1 })
+	Cookies.set('setManualEN', 'false', { expires: 1 })
+	Cookies.set('setManualAT', 'false', { expires: 1 })
+	Cookies.set('setManualCH', 'false', { expires: 1 })
+	Cookies.set('setManualGLOBAL', 'true', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
 });
@@ -123,7 +150,7 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 
 
 	// Deutschland
-  	if (currentCountry === 'DE' && Cookies.get('setManualDE') === 'false' && Cookies.get('setManualEN') === 'false' && Cookies.get('setManualAT') === 'false' && Cookies.get('setManualCH') === 'false') {
+  	if (currentCountry === 'DE' && Cookies.get('setManualDE') === 'false' && Cookies.get('setManualEN') === 'false' && Cookies.get('setManualAT') === 'false' && Cookies.get('setManualCH') === 'false' && Cookies.get('setManualGLOBAL') === 'false') {
 		Weglot.switchTo('de');
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
@@ -146,7 +173,7 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 	}
 
 	// Österreich
-	if (currentCountry === 'AT' && Cookies.get('setManualDE') === 'false' && Cookies.get('setManualEN') === 'false' && Cookies.get('setManualAT') === 'false' && Cookies.get('setManualCH') === 'false') {
+	if (currentCountry === 'AT' && Cookies.get('setManualDE') === 'false' && Cookies.get('setManualEN') === 'false' && Cookies.get('setManualAT') === 'false' && Cookies.get('setManualCH') === 'false' && Cookies.get('setManualGLOBAL') === 'false') {
 		Weglot.switchTo('de');
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
@@ -169,7 +196,7 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 	}
 
 	// Schweiz
-	if (currentCountry === 'CH' && Cookies.get('setManualDE') === 'false' && Cookies.get('setManualEN') === 'false' && Cookies.get('setManualAT') === 'false' && Cookies.get('setManualCH') === 'false') {
+	if (currentCountry === 'CH' && Cookies.get('setManualDE') === 'false' && Cookies.get('setManualEN') === 'false' && Cookies.get('setManualAT') === 'false' && Cookies.get('setManualCH') === 'false' && Cookies.get('setManualGLOBAL') === 'false') {
 		Weglot.switchTo('de');
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
@@ -192,7 +219,7 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 	}
 
 	// United States
-	if (currentCountry === 'US' && Cookies.get('setManualEN') === 'false' && Cookies.get('setManualDE') === 'false' && Cookies.get('setManualAT') === 'false' && Cookies.get('setManualCH') === 'false') {
+	if (currentCountry === 'US' && Cookies.get('setManualEN') === 'false' && Cookies.get('setManualDE') === 'false' && Cookies.get('setManualAT') === 'false' && Cookies.get('setManualCH') === 'false' && Cookies.get('setManualGLOBAL') === 'false') {
 		Weglot.switchTo('en');
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
@@ -212,6 +239,30 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-us').addClass('is-active');
+	}
+
+	// Global
+	// if currentCountry is not DE, AT, CH, US
+	if (currentCountry !== 'DE' && currentCountry !== 'AT' && currentCountry !== 'CH' && currentCountry !== 'US' && Cookies.get('setManualDE') === 'false' && Cookies.get('setManualEN') === 'false' && Cookies.get('setManualAT') === 'false' && Cookies.get('setManualCH') === 'false' && Cookies.get('setManualGLOBAL') === 'false') {
+		Weglot.switchTo('en');
+		currentLang = Weglot.getCurrentLang();
+		// change text of .is-language-switch to 'Deutschland'
+		$('.is-language-switch').text('Global');
+
+		// flags
+		$('.footer_language-icon').removeClass('is-active');
+		$('.footer_language-icon.is-global').addClass('is-active');
+	}
+
+	if (Cookies.get('setManualGLOBAL') === 'true') {
+		Weglot.switchTo('en');
+		currentLang = Weglot.getCurrentLang();
+		// change text of .is-language-switch to 'Deutschland'
+		$('.is-language-switch').text('Global');
+
+		// flags
+		$('.footer_language-icon').removeClass('is-active');
+		$('.footer_language-icon.is-global').addClass('is-active');
 	}
 })
 }
