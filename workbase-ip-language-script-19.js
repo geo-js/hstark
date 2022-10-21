@@ -150,7 +150,7 @@ $('.country-de').click(function() {
 
 	$('.language-switch-popup').toggleClass('is-active');
 
-	$('.english-global-lang-switcher').removeClass('is-active');
+	$('.english-global-lang-switcher').addClass('is-active');
 	$('.english-us-lang-switcher').removeClass('is-active');
 	$('.native-lang-de').addClass('is-active');
 	$('.native-lang-at').removeClass('is-active');
@@ -178,7 +178,7 @@ $('.country-at').click(function() {
 
 	$('.language-switch-popup').toggleClass('is-active');
 
-	$('.english-global-lang-switcher').removeClass('is-active');
+	$('.english-global-lang-switcher').addClass('is-active');
 	$('.english-us-lang-switcher').removeClass('is-active');
 	$('.native-lang-de').removeClass('is-active');
 	$('.native-lang-at').addClass('is-active');
@@ -206,7 +206,7 @@ $('.country-ch').click(function() {
 
 	$('.language-switch-popup').toggleClass('is-active');
 
-	$('.english-global-lang-switcher').removeClass('is-active');
+	$('.english-global-lang-switcher').addClass('is-active');
 	$('.english-us-lang-switcher').removeClass('is-active');
 	$('.native-lang-de').removeClass('is-active');
 	$('.native-lang-at').removeClass('is-active');
