@@ -4,6 +4,9 @@ $(document).ready(function() {
 	$('.footer_language-trigger').click(function() {
 		$('.language-switch-popup').toggleClass('is-active');
 	});
+	$('.footer_component').click(function() {
+		$('.language-switch-popup').removeClass('is-active');
+	});
 });
 
 // init Weglot
@@ -91,7 +94,7 @@ $('.country-us').click(function() {
 
 	$('.country-item').removeClass('is-active');
 	$(this).addClass('is-active');
-	
+
 	$('.is-language-switch').text('United States');
 
 	// flags
