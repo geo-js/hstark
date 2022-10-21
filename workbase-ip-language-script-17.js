@@ -12,6 +12,31 @@ Weglot.on('initialized', ()=>{
 
 });
 
+// Upper Language Selectors
+// English Global Top Switcher
+$('.english-global-lang-switcher').click(function() {
+	Weglot.switchTo('en');
+	currentLang = Weglot.getCurrentLang();
+
+	$('.country-item').removeClass('is-active');
+	$('.country-global').addClass('is-active');
+
+	$('.is-language-switch').text('Global');
+
+	// flags
+	$('.footer_language-icon').removeClass('is-active');
+	$('.footer_language-icon.is-global').addClass('is-active');
+
+	Cookies.set('setManualDE', 'false', { expires: 1 })
+	Cookies.set('setManualEN', 'false', { expires: 1 })
+	Cookies.set('setManualAT', 'false', { expires: 1 })
+	Cookies.set('setManualCH', 'false', { expires: 1 })
+	Cookies.set('setManualGLOBAL', 'true', { expires: 1 })
+
+	$('.language-switch-popup').toggleClass('is-active');
+});
+
+
 // on click .country-de
 $('.country-de').click(function() {
 	Weglot.switchTo('de');
@@ -122,6 +147,10 @@ $('.country-global').click(function() {
 	Cookies.set('setManualGLOBAL', 'true', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
+
+	$('.english-global-lang-switcher').toggleClass('is-active');
+	$('.english-us-lang-switcher').removeClass('is-active');
+	$('.native-lang-de').removeClass('is-active');
 });
 
 
@@ -308,6 +337,10 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-global').addClass('is-active');
+
+		$('.english-global-lang-switcher').toggleClass('is-active');
+		$('.english-us-lang-switcher').removeClass('is-active');
+		$('.native-lang-de').removeClass('is-active');
 	}
 
 	// if currentCountry is not DE, AT, CH, US and Cookies are not set
@@ -322,6 +355,10 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-global').addClass('is-active');
+
+		$('.english-global-lang-switcher').toggleClass('is-active');
+		$('.english-us-lang-switcher').removeClass('is-active');
+		$('.native-lang-de').removeClass('is-active');
 	}
 
 	if (Cookies.get('setManualGLOBAL') === 'true') {
@@ -335,6 +372,10 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-global').addClass('is-active');
+
+		$('.english-global-lang-switcher').toggleClass('is-active');
+		$('.english-us-lang-switcher').removeClass('is-active');
+		$('.native-lang-de').removeClass('is-active');
 	}
 })
 
