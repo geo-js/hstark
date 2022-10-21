@@ -26,6 +26,9 @@ $('.country-de').click(function() {
 	Weglot.switchTo('de');
 	currentLang = Weglot.getCurrentLang();
 
+	$('.country-item').removeClass('is-active');
+	$(this).addClass('is-active');
+
 	$('.is-language-switch').text('Deutschland');
 
 	$('.footer_language-icon').removeClass('is-active');
@@ -43,6 +46,10 @@ $('.country-de').click(function() {
 $('.country-at').click(function() {
 	Weglot.switchTo('de');
 	currentLang = Weglot.getCurrentLang();
+
+	$('.country-item').removeClass('is-active');
+	$(this).addClass('is-active');
+
 	$('.is-language-switch').text('Österreich');
 
 	$('.footer_language-icon').removeClass('is-active');
@@ -60,6 +67,10 @@ $('.country-at').click(function() {
 $('.country-ch').click(function() {
 	Weglot.switchTo('de');
 	currentLang = Weglot.getCurrentLang();
+
+	$('.country-item').removeClass('is-active');
+	$(this).addClass('is-active');
+
 	$('.is-language-switch').text('Schweiz');
 
 	$('.footer_language-icon').removeClass('is-active');
@@ -77,6 +88,10 @@ $('.country-ch').click(function() {
 $('.country-us').click(function() {
 	Weglot.switchTo('en');
 	currentLang = Weglot.getCurrentLang();
+
+	$('.country-item').removeClass('is-active');
+	$(this).addClass('is-active');
+	
 	$('.is-language-switch').text('United States');
 
 	// flags
