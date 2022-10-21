@@ -125,8 +125,6 @@ $('.country-global').click(function() {
 });
 
 
-// function CountryCheckAndSet
-function CountryCheckAndSet() {
 // ipapi.co
 $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
   console.log("Country by ipapi: " + ipapicountrycode)
@@ -137,6 +135,17 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 
 	// Deutschland
   	if (currentCountry === 'DE' && Cookies.get('setManualDE') === 'false' && Cookies.get('setManualEN') === 'false' && Cookies.get('setManualAT') === 'false' && Cookies.get('setManualCH') === 'false' && Cookies.get('setManualGLOBAL') === 'false') {
+		Weglot.switchTo('de');
+		currentLang = Weglot.getCurrentLang();
+		// change text of .is-language-switch to 'Deutschland'
+		$('.is-language-switch').text('Deutschland');
+
+		// flags
+		$('.footer_language-icon').removeClass('is-active');
+		$('.footer_language-icon.is-de').toggleClass('is-active');
+	}
+	// if currentCountry is DE and Cookies dont exist
+	else if (currentCountry === 'DE' && Cookies.get('setManualDE') === undefined && Cookies.get('setManualEN') === undefined && Cookies.get('setManualAT') === undefined && Cookies.get('setManualCH') === undefined && Cookies.get('setManualGLOBAL') === undefined) {
 		Weglot.switchTo('de');
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
@@ -251,7 +260,6 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon.is-global').addClass('is-active');
 	}
 })
-}
 
 // open weglot popup
 $(document).ready(function() {
@@ -264,12 +272,4 @@ $(document).ready(function() {
 		$('.language-switch-popup').removeClass('is-active');
 	}
 	);
-		// run function CountryCheckAndSet
-		CountryCheckAndSet();
-});
-
-// when page is loaded
-$(window).on('load', function() {
-	// run function CountryCheckAndSet
-	CountryCheckAndSet();
 });
