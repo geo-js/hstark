@@ -34,6 +34,12 @@ $('.english-global-lang-switcher').click(function() {
 	Cookies.set('setManualGLOBAL', 'true', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
+
+	$('.english-global-lang-switcher').addClass('is-active');
+	$('.english-us-lang-switcher').removeClass('is-active');
+	$('.native-lang-de').removeClass('is-active');
+	$('.native-lang-at').removeClass('is-active');
+	$('.native-lang-ch').removeClass('is-active');
 });
 
 // English US Top Switcher
@@ -57,6 +63,12 @@ $('.english-us-lang-switcher').click(function() {
 	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
+
+	$('.english-global-lang-switcher').removeClass('is-active');
+	$('.english-us-lang-switcher').addClass('is-active');
+	$('.native-lang-de').removeClass('is-active');
+	$('.native-lang-at').removeClass('is-active');
+	$('.native-lang-ch').removeClass('is-active');
 });
 
 // Native DE Top Switcher
@@ -80,6 +92,12 @@ $('.native-lang-de').click(function() {
 	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
+
+	$('.english-global-lang-switcher').addClass('is-active');
+	$('.english-us-lang-switcher').removeClass('is-active');
+	$('.native-lang-de').addClass('is-active');
+	$('.native-lang-at').removeClass('is-active');
+	$('.native-lang-ch').removeClass('is-active');
 });
 
 // Native AT Top Switcher
@@ -103,6 +121,12 @@ $('.native-lang-at').click(function() {
 	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
+
+	$('.english-global-lang-switcher').addClass('is-active');
+	$('.english-us-lang-switcher').removeClass('is-active');
+	$('.native-lang-de').removeClass('is-active');
+	$('.native-lang-at').addClass('is-active');
+	$('.native-lang-ch').removeClass('is-active');
 });
 
 // Native CH Top Switcher
@@ -126,6 +150,12 @@ $('.native-lang-ch').click(function() {
 	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
+
+	$('.english-global-lang-switcher').addClass('is-active');
+	$('.english-us-lang-switcher').removeClass('is-active');
+	$('.native-lang-de').removeClass('is-active');
+	$('.native-lang-at').removeClass('is-active');
+	$('.native-lang-ch').addClass('is-active');
 });
 
 
