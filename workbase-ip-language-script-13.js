@@ -267,3 +267,9 @@ $(document).ready(function() {
 		// run function CountryCheckAndSet
 		CountryCheckAndSet();
 });
+
+// when page is loaded
+$(window).on('load', function() {
+	// run function CountryCheckAndSet
+	CountryCheckAndSet();
+});
