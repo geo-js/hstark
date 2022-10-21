@@ -36,6 +36,7 @@ $('.english-global-lang-switcher').click(function() {
 	$('.language-switch-popup').toggleClass('is-active');
 
 	$('.english-global-lang-switcher').addClass('is-active');
+	$('.english-global-lang-switcher').addClass('is-visible');
 	$('.english-us-lang-switcher').removeClass('is-active');
 	$('.native-lang-de').removeClass('is-active');
 	$('.native-lang-at').removeClass('is-active');
@@ -65,6 +66,7 @@ $('.english-us-lang-switcher').click(function() {
 	$('.language-switch-popup').toggleClass('is-active');
 
 	$('.english-global-lang-switcher').removeClass('is-active');
+	$('.english-global-lang-switcher').removeClass('is-visible');
 	$('.english-us-lang-switcher').addClass('is-active');
 	$('.native-lang-de').removeClass('is-active');
 	$('.native-lang-at').removeClass('is-active');
@@ -93,7 +95,8 @@ $('.native-lang-de').click(function() {
 
 	$('.language-switch-popup').toggleClass('is-active');
 
-	$('.english-global-lang-switcher').addClass('is-active');
+	$('.english-global-lang-switcher').removeClass('is-active');
+	$('.english-global-lang-switcher').addClass('is-visible');
 	$('.english-us-lang-switcher').removeClass('is-active');
 	$('.native-lang-de').addClass('is-active');
 	$('.native-lang-at').removeClass('is-active');
@@ -122,7 +125,8 @@ $('.native-lang-at').click(function() {
 
 	$('.language-switch-popup').toggleClass('is-active');
 
-	$('.english-global-lang-switcher').addClass('is-active');
+	$('.english-global-lang-switcher').removeClass('is-active');
+	$('.english-global-lang-switcher').addClass('is-visible');
 	$('.english-us-lang-switcher').removeClass('is-active');
 	$('.native-lang-de').removeClass('is-active');
 	$('.native-lang-at').addClass('is-active');
@@ -151,7 +155,8 @@ $('.native-lang-ch').click(function() {
 
 	$('.language-switch-popup').toggleClass('is-active');
 
-	$('.english-global-lang-switcher').addClass('is-active');
+	$('.english-global-lang-switcher').removeClass('is-active');
+	$('.english-global-lang-switcher').addClass('is-visible');
 	$('.english-us-lang-switcher').removeClass('is-active');
 	$('.native-lang-de').removeClass('is-active');
 	$('.native-lang-at').removeClass('is-active');
@@ -180,7 +185,8 @@ $('.country-de').click(function() {
 
 	$('.language-switch-popup').toggleClass('is-active');
 
-	$('.english-global-lang-switcher').addClass('is-active');
+	$('.english-global-lang-switcher').removeClass('is-active');
+	$('.english-global-lang-switcher').addClass('is-visible');
 	$('.english-us-lang-switcher').removeClass('is-active');
 	$('.native-lang-de').addClass('is-active');
 	$('.native-lang-at').removeClass('is-active');
@@ -208,7 +214,8 @@ $('.country-at').click(function() {
 
 	$('.language-switch-popup').toggleClass('is-active');
 
-	$('.english-global-lang-switcher').addClass('is-active');
+	$('.english-global-lang-switcher').removeClass('is-active');
+	$('.english-global-lang-switcher').addClass('is-visible');
 	$('.english-us-lang-switcher').removeClass('is-active');
 	$('.native-lang-de').removeClass('is-active');
 	$('.native-lang-at').addClass('is-active');
@@ -236,7 +243,8 @@ $('.country-ch').click(function() {
 
 	$('.language-switch-popup').toggleClass('is-active');
 
-	$('.english-global-lang-switcher').addClass('is-active');
+	$('.english-global-lang-switcher').removeClass('is-active');
+	$('.english-global-lang-switcher').addClass('is-visible');
 	$('.english-us-lang-switcher').removeClass('is-active');
 	$('.native-lang-de').removeClass('is-active');
 	$('.native-lang-at').removeClass('is-active');
@@ -266,6 +274,7 @@ $('.country-us').click(function() {
 	$('.language-switch-popup').toggleClass('is-active');
 
 	$('.english-global-lang-switcher').removeClass('is-active');
+	$('.english-global-lang-switcher').removeClass('is-visible');
 	$('.english-us-lang-switcher').addClass('is-active');
 	$('.native-lang-de').removeClass('is-active');
 	$('.native-lang-at').removeClass('is-active');
@@ -295,6 +304,7 @@ $('.country-global').click(function() {
 	$('.language-switch-popup').toggleClass('is-active');
 
 	$('.english-global-lang-switcher').addClass('is-active');
+	$('.english-global-lang-switcher').addClass('is-visible');
 	$('.english-us-lang-switcher').removeClass('is-active');
 	$('.native-lang-de').removeClass('is-active');
 	$('.native-lang-at').removeClass('is-active');
@@ -323,7 +333,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-de').toggleClass('is-active');
 
-		$('.english-global-lang-switcher').addClass('is-active');
+		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-global-lang-switcher').addClass('is-visible');
 		$('.english-us-lang-switcher').removeClass('is-active');
 		$('.native-lang-de').addClass('is-active');
 		$('.native-lang-at').removeClass('is-active');
@@ -342,7 +353,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-de').toggleClass('is-active');
 
-		$('.english-global-lang-switcher').addClass('is-active');
+		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-global-lang-switcher').addClass('is-visible');
 		$('.english-us-lang-switcher').removeClass('is-active');
 		$('.native-lang-de').addClass('is-active');
 		$('.native-lang-at').removeClass('is-active');
@@ -361,7 +373,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-de').addClass('is-active');
 
-		$('.english-global-lang-switcher').addClass('is-active');
+		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-global-lang-switcher').addClass('is-visible');
 		$('.english-us-lang-switcher').removeClass('is-active');
 		$('.native-lang-de').addClass('is-active');
 		$('.native-lang-at').removeClass('is-active');
@@ -381,7 +394,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-at').addClass('is-active');
 
-		$('.english-global-lang-switcher').addClass('is-active');
+		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-global-lang-switcher').addClass('is-visible');
 		$('.english-us-lang-switcher').removeClass('is-active');
 		$('.native-lang-de').removeClass('is-active');
 		$('.native-lang-at').addClass('is-active');
@@ -400,7 +414,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-at').addClass('is-active');
 
-		$('.english-global-lang-switcher').addClass('is-active');
+		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-global-lang-switcher').addClass('is-visible');
 		$('.english-us-lang-switcher').removeClass('is-active');
 		$('.native-lang-de').removeClass('is-active');
 		$('.native-lang-at').addClass('is-active');
@@ -419,7 +434,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-at').addClass('is-active');
 
-		$('.english-global-lang-switcher').addClass('is-active');
+		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-global-lang-switcher').addClass('is-visible');
 		$('.english-us-lang-switcher').removeClass('is-active');
 		$('.native-lang-de').removeClass('is-active');
 		$('.native-lang-at').addClass('is-active');
@@ -439,7 +455,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-ch').addClass('is-active');
 
-		$('.english-global-lang-switcher').addClass('is-active');
+		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-global-lang-switcher').addClass('is-visible');
 		$('.english-us-lang-switcher').removeClass('is-active');
 		$('.native-lang-de').removeClass('is-active');
 		$('.native-lang-at').removeClass('is-active');
@@ -459,7 +476,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-ch').addClass('is-active');
 
-		$('.english-global-lang-switcher').addClass('is-active');
+		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-global-lang-switcher').addClass('is-visible');
 		$('.english-us-lang-switcher').removeClass('is-active');
 		$('.native-lang-de').removeClass('is-active');
 		$('.native-lang-at').removeClass('is-active');
@@ -478,7 +496,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-ch').addClass('is-active');
 
-		$('.english-global-lang-switcher').addClass('is-active');
+		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-global-lang-switcher').addClass('is-visible');
 		$('.english-us-lang-switcher').removeClass('is-active');
 		$('.native-lang-de').removeClass('is-active');
 		$('.native-lang-at').removeClass('is-active');
@@ -499,6 +518,7 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon.is-us').addClass('is-active');
 
 		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-global-lang-switcher').removeClass('is-visible');
 		$('.english-us-lang-switcher').addClass('is-active');
 		$('.native-lang-de').removeClass('is-active');
 		$('.native-lang-at').removeClass('is-active');
@@ -519,6 +539,7 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon.is-us').addClass('is-active');
 
 		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-global-lang-switcher').removeClass('is-visible');
 		$('.english-us-lang-switcher').addClass('is-active');
 		$('.native-lang-de').removeClass('is-active');
 		$('.native-lang-at').removeClass('is-active');
@@ -538,6 +559,7 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon.is-us').addClass('is-active');
 
 		$('.english-global-lang-switcher').removeClass('is-active');
+		$('.english-global-lang-switcher').removeClass('is-visible');
 		$('.english-us-lang-switcher').addClass('is-active');
 		$('.native-lang-de').removeClass('is-active');
 		$('.native-lang-at').removeClass('is-active');
@@ -559,6 +581,7 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon.is-global').addClass('is-active');
 
 		$('.english-global-lang-switcher').addClass('is-active');
+		$('.english-global-lang-switcher').addClass('is-visible');
 		$('.english-us-lang-switcher').removeClass('is-active');
 		$('.native-lang-de').removeClass('is-active');
 		$('.native-lang-at').removeClass('is-active');
@@ -579,6 +602,7 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon.is-global').addClass('is-active');
 
 		$('.english-global-lang-switcher').addClass('is-active');
+		$('.english-global-lang-switcher').addClass('is-visible');
 		$('.english-us-lang-switcher').removeClass('is-active');
 		$('.native-lang-de').removeClass('is-active');
 		$('.native-lang-at').removeClass('is-active');
@@ -598,6 +622,7 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon.is-global').addClass('is-active');
 
 		$('.english-global-lang-switcher').addClass('is-active');
+		$('.english-global-lang-switcher').addClass('is-visible');
 		$('.english-us-lang-switcher').removeClass('is-active');
 		$('.native-lang-de').removeClass('is-active');
 		$('.native-lang-at').removeClass('is-active');
