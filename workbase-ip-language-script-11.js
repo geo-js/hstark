@@ -143,8 +143,12 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.is-language-switch').text('Deutschland');
 
 		// flags
-		$('.footer_language-icon').removeClass('is-active');
+		
 		$('.footer_language-icon.is-de').addClass('is-active');
+		$('.footer_language-icon.is-at').removeClass('is-active');
+		$('.footer_language-icon.is-ch').removeClass('is-active');
+		$('.footer_language-icon.is-us').removeClass('is-active');
+		$('.footer_language-icon.is-global').removeClass('is-active');
 	}
 
 	if (Cookies.get('setManualDE') === 'true') {
