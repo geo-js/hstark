@@ -139,17 +139,21 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Deutschland');
+		$('.country-item').removeClass('is-active');
+		$('.country-de').addClass('is-active');
 
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-de').toggleClass('is-active');
 	}
-	// if currentCountry is DE and Cookies dont exist
+	// if currentCountry is DE and Cookies are not set
 	else if (currentCountry === 'DE' && Cookies.get('setManualDE') === undefined && Cookies.get('setManualEN') === undefined && Cookies.get('setManualAT') === undefined && Cookies.get('setManualCH') === undefined && Cookies.get('setManualGLOBAL') === undefined) {
 		Weglot.switchTo('de');
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Deutschland');
+		$('.country-item').removeClass('is-active');
+		$('.country-de').addClass('is-active');
 
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
@@ -173,6 +177,19 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Österreich');
+
+		// flags
+		$('.footer_language-icon').removeClass('is-active');
+		$('.footer_language-icon.is-at').addClass('is-active');
+	}
+	// if currentCountry is AT and Cookies are not set
+	else if (currentCountry === 'AT' && Cookies.get('setManualDE') === undefined && Cookies.get('setManualEN') === undefined && Cookies.get('setManualAT') === undefined && Cookies.get('setManualCH') === undefined && Cookies.get('setManualGLOBAL') === undefined) {
+		Weglot.switchTo('de');
+		currentLang = Weglot.getCurrentLang();
+		// change text of .is-language-switch to 'Deutschland'
+		$('.is-language-switch').text('Österreich');
+		$('.country-item').removeClass('is-active');
+		$('.country-at').addClass('is-active');
 
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
@@ -202,6 +219,20 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.footer_language-icon.is-ch').addClass('is-active');
 	}
 
+	// if currentCountry is CH and Cookies are not set
+	else if (currentCountry === 'CH' && Cookies.get('setManualDE') === undefined && Cookies.get('setManualEN') === undefined && Cookies.get('setManualAT') === undefined && Cookies.get('setManualCH') === undefined && Cookies.get('setManualGLOBAL') === undefined) {
+		Weglot.switchTo('de');
+		currentLang = Weglot.getCurrentLang();
+		// change text of .is-language-switch to 'Deutschland'
+		$('.is-language-switch').text('Schweiz');
+		$('.country-item').removeClass('is-active');
+		$('.country-ch').addClass('is-active');
+
+		// flags
+		$('.footer_language-icon').removeClass('is-active');
+		$('.footer_language-icon.is-ch').addClass('is-active');
+	}
+
 	if (Cookies.get('setManualCH') === 'true') {
 		Weglot.switchTo('de');
 		currentLang = Weglot.getCurrentLang();
@@ -219,6 +250,20 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('United States');
+
+		// flags
+		$('.footer_language-icon').removeClass('is-active');
+		$('.footer_language-icon.is-us').addClass('is-active');
+	}
+
+	// if currentCountry is US and Cookies are not set
+	else if (currentCountry === 'US' && Cookies.get('setManualDE') === undefined && Cookies.get('setManualEN') === undefined && Cookies.get('setManualAT') === undefined && Cookies.get('setManualCH') === undefined && Cookies.get('setManualGLOBAL') === undefined) {
+		Weglot.switchTo('en');
+		currentLang = Weglot.getCurrentLang();
+		// change text of .is-language-switch to 'Deutschland'
+		$('.is-language-switch').text('United States');
+		$('.country-item').removeClass('is-active');
+		$('.country-us').addClass('is-active');
 
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
@@ -243,6 +288,20 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Global');
+
+		// flags
+		$('.footer_language-icon').removeClass('is-active');
+		$('.footer_language-icon.is-global').addClass('is-active');
+	}
+
+	// if currentCountry is not DE, AT, CH, US and Cookies are not set
+	else if (currentCountry !== 'DE' && currentCountry !== 'AT' && currentCountry !== 'CH' && currentCountry !== 'US' && Cookies.get('setManualDE') === undefined && Cookies.get('setManualEN') === undefined && Cookies.get('setManualAT') === undefined && Cookies.get('setManualCH') === undefined && Cookies.get('setManualGLOBAL') === undefined) {
+		Weglot.switchTo('en');
+		currentLang = Weglot.getCurrentLang();
+		// change text of .is-language-switch to 'Deutschland'
+		$('.is-language-switch').text('Global');
+		$('.country-item').removeClass('is-active');
+		$('.country-global').addClass('is-active');
 
 		// flags
 		$('.footer_language-icon').removeClass('is-active');
