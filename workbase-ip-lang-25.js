@@ -22,11 +22,13 @@ $('.english-global-lang-switcher').click(function() {
 	$('.country-global').addClass('is-active');
 
 	$('.is-language-switch').text('Global');
+	$('.is-language-switch-cb').text('Global - English');
 
-	// flags
+	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
 	$('.footer_language-icon.is-global').addClass('is-active');
 
+	// flags in Cookiebanner
 	$('.cb_language-icon').removeClass('is-active');
 	$('.cb_language-icon.is-global').addClass('is-active');
 
@@ -56,11 +58,13 @@ $('.english-us-lang-switcher').click(function() {
 	$('.country-us').addClass('is-active');
 
 	$('.is-language-switch').text('United States');
+	$('.is-language-switch-cb').text('United States - English');
 
-	// flags
+	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
 	$('.footer_language-icon.is-us').addClass('is-active');
 
+	// flags in Cookiebanner
 	$('.cb_language-icon').removeClass('is-active');
 	$('.cb_language-icon.is-us').addClass('is-active');
 
@@ -90,11 +94,13 @@ $('.native-lang-de').click(function() {
 	$('.country-de').addClass('is-active');
 
 	$('.is-language-switch').text('Deutschland');
+	$('.is-language-switch-cb').text('Deutschland - Deutsch');
 
-	// flags
+	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
 	$('.footer_language-icon.is-de').addClass('is-active');
 
+	// flags in Cookiebanner
 	$('.cb_language-icon').removeClass('is-active');
 	$('.cb_language-icon.is-de').addClass('is-active');
 
@@ -124,11 +130,13 @@ $('.native-lang-at').click(function() {
 	$('.country-at').addClass('is-active');
 
 	$('.is-language-switch').text('Österreich');
+	$('.is-language-switch-cb').text('Österreich - Deutsch');
 
-	// flags
+	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
 	$('.footer_language-icon.is-at').addClass('is-active');
 
+	// flags in Cookiebanner
 	$('.cb_language-icon').removeClass('is-active');
 	$('.cb_language-icon.is-at').addClass('is-active');
 
@@ -158,11 +166,13 @@ $('.native-lang-ch').click(function() {
 	$('.country-ch').addClass('is-active');
 
 	$('.is-language-switch').text('Schweiz');
+	$('.is-language-switch-cb').text('Schweiz - Deutsch');
 
-	// flags
+	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
 	$('.footer_language-icon.is-ch').addClass('is-active');
 
+	// flags in Cookiebanner
 	$('.cb_language-icon').removeClass('is-active');
 	$('.cb_language-icon.is-ch').addClass('is-active');
 
@@ -193,10 +203,13 @@ $('.country-de').click(function() {
 	$(this).addClass('is-active');
 
 	$('.is-language-switch').text('Deutschland');
+	$('.is-language-switch-cb').text('Deutschland - Deutsch');
 
+	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
 	$('.footer_language-icon.is-de').addClass('is-active');
 
+	// flags in Cookiebanner
 	$('.cb_language-icon').removeClass('is-active');
 	$('.cb_language-icon.is-de').addClass('is-active');
 
@@ -226,10 +239,13 @@ $('.country-at').click(function() {
 	$(this).addClass('is-active');
 
 	$('.is-language-switch').text('Österreich');
+	$('.is-language-switch-cb').text('Österreich - Deutsch');
 
+	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
 	$('.footer_language-icon.is-at').addClass('is-active');
 
+	// flags in Cookiebanner
 	$('.cb_language-icon').removeClass('is-active');
 	$('.cb_language-icon.is-at').addClass('is-active');
 
@@ -259,10 +275,13 @@ $('.country-ch').click(function() {
 	$(this).addClass('is-active');
 
 	$('.is-language-switch').text('Schweiz');
+	$('.is-language-switch-cb').text('Schweiz - Deutsch');
 
+	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
 	$('.footer_language-icon.is-ch').addClass('is-active');
-
+	
+	// flags in Cookiebanner
 	$('.cb_language-icon').removeClass('is-active');
 	$('.cb_language-icon.is-ch').addClass('is-active');
 
@@ -292,11 +311,13 @@ $('.country-us').click(function() {
 	$(this).addClass('is-active');
 
 	$('.is-language-switch').text('United States');
+	$('.is-language-switch-cb').text('United States - English');
 
-	// flags
+	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
 	$('.footer_language-icon.is-us').addClass('is-active');
 
+	// flags in Cookiebanner
 	$('.cb_language-icon').removeClass('is-active');
 	$('.cb_language-icon.is-us').addClass('is-active');
 
@@ -326,11 +347,13 @@ $('.country-global').click(function() {
 	$(this).addClass('is-active');
 
 	$('.is-language-switch').text('Global');
+	$('.is-language-switch-cb').text('Global - English');
 
-	// flags
+	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
 	$('.footer_language-icon.is-global').addClass('is-active');
 
+	// flags in Cookiebanner
 	$('.cb_language-icon').removeClass('is-active');
 	$('.cb_language-icon.is-global').addClass('is-active');
 
@@ -366,13 +389,16 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Deutschland');
+		$('.is-language-switch-cb').text('Deutschland - Deutsch');
+
 		$('.country-item').removeClass('is-active');
 		$('.country-de').addClass('is-active');
 
-		// flags
+		// flags in footer
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-de').toggleClass('is-active');
 
+		// flags in Cookiebanner
 		$('.cb_language-icon').removeClass('is-active');
 		$('.cb_language-icon.is-de').toggleClass('is-active');
 
@@ -389,13 +415,16 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Deutschland');
+		$('.is-language-switch-cb').text('Deutschland - Deutsch');
+
 		$('.country-item').removeClass('is-active');
 		$('.country-de').addClass('is-active');
 
-		// flags
+		// flags in footer
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-de').toggleClass('is-active');
 
+		// flags in Cookiebanner
 		$('.cb_language-icon').removeClass('is-active');
 		$('.cb_language-icon.is-de').toggleClass('is-active');
 
@@ -412,13 +441,16 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Deutschland');
+		$('.is-language-switch-cb').text('Deutschland - Deutsch');
+
 		$('.country-item').removeClass('is-active');
 		$('.country-de').addClass('is-active');
 
-		// flags
+		// flags in footer
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-de').addClass('is-active');
 
+		// flags in Cookiebanner
 		$('.cb_language-icon').removeClass('is-active');
 		$('.cb_language-icon.is-de').addClass('is-active');
 
@@ -436,13 +468,16 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Österreich');
+		$('.is-language-switch-cb').text('Österreich - Deutsch');
+
 		$('.country-item').removeClass('is-active');
 		$('.country-at').addClass('is-active');
 
-		// flags
+		// flags in footer
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-at').addClass('is-active');
 
+		// flags in Cookiebanner
 		$('.cb_language-icon').removeClass('is-active');
 		$('.cb_language-icon.is-at').addClass('is-active');
 
@@ -459,13 +494,16 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Österreich');
+		$('.is-language-switch-cb').text('Österreich - Deutsch');
+
 		$('.country-item').removeClass('is-active');
 		$('.country-at').addClass('is-active');
 
-		// flags
+		// flags in footer
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-at').addClass('is-active');
 
+		// flags in Cookiebanner
 		$('.cb_language-icon').removeClass('is-active');
 		$('.cb_language-icon.is-at').addClass('is-active');
 
@@ -482,13 +520,16 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Österreich');
+		$('.is-language-switch-cb').text('Österreich - Deutsch');
+
 		$('.country-item').removeClass('is-active');
 		$('.country-at').addClass('is-active');
 
-		// flags
+		// flags in footer
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-at').addClass('is-active');
 
+		// flags in Cookiebanner
 		$('.cb_language-icon').removeClass('is-active');
 		$('.cb_language-icon.is-at').addClass('is-active');
 
@@ -506,13 +547,16 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Schweiz');
+		$('.is-language-switch-cb').text('Schweiz - Deutsch');
+
 		$('.country-item').removeClass('is-active');
 		$('.country-ch').addClass('is-active');
 
-		// flags
+		// flags in footer
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-ch').addClass('is-active');
 
+		// flags in Cookiebanner
 		$('.cb_language-icon').removeClass('is-active');
 		$('.cb_language-icon.is-ch').addClass('is-active');
 
@@ -530,13 +574,16 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Schweiz');
+		$('.is-language-switch-cb').text('Schweiz - Deutsch');
+
 		$('.country-item').removeClass('is-active');
 		$('.country-ch').addClass('is-active');
 
-		// flags
+		// flags in footer
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-ch').addClass('is-active');
 
+		// flags in Cookiebanner
 		$('.cb_language-icon').removeClass('is-active');
 		$('.cb_language-icon.is-ch').addClass('is-active');
 
@@ -553,13 +600,16 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Schweiz');
+		$('.is-language-switch-cb').text('Schweiz - Deutsch');
+
 		$('.country-item').removeClass('is-active');
 		$('.country-ch').addClass('is-active');
 
-		// flags
+		// flags in footer
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-ch').addClass('is-active');
 
+		// flags in Cookiebanner
 		$('.cb_language-icon').removeClass('is-active');
 		$('.cb_language-icon.is-ch').addClass('is-active');
 
@@ -577,13 +627,16 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('United States');
+		$('.is-language-switch-cb').text('United States - English');
+
 		$('.country-item').removeClass('is-active');
 		$('.country-us').addClass('is-active');
 
-		// flags
+		// flags in footer
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-us').addClass('is-active');
 
+		// flags in Cookiebanner
 		$('.cb_language-icon').removeClass('is-active');
 		$('.cb_language-icon.is-us').addClass('is-active');
 
@@ -601,13 +654,16 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('United States');
+		$('.is-language-switch-cb').text('United States - English');
+
 		$('.country-item').removeClass('is-active');
 		$('.country-us').addClass('is-active');
 
-		// flags
+		// flags in footer
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-us').addClass('is-active');
 
+		// flags in Cookiebanner
 		$('.cb_language-icon').removeClass('is-active');
 		$('.cb_language-icon.is-us').addClass('is-active');
 
@@ -624,13 +680,16 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('United States');
+		$('.is-language-switch-cb').text('United States - English');
+
 		$('.country-item').removeClass('is-active');
 		$('.country-us').addClass('is-active');
 
-		// flags
+		// flags in footer
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-us').addClass('is-active');
 
+		// flags in Cookiebanner
 		$('.cb_language-icon').removeClass('is-active');
 		$('.cb_language-icon.is-us').addClass('is-active');
 
@@ -649,13 +708,16 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Global');
+		$('.is-language-switch-cb').text('Global - English');
+
 		$('.country-item').removeClass('is-active');
 		$('.country-global').addClass('is-active');
 
-		// flags
+		// flags in footer
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-global').addClass('is-active');
 
+		// flags in Cookiebanner
 		$('.cb_language-icon').removeClass('is-active');
 		$('.cb_language-icon.is-global').addClass('is-active');
 
@@ -673,13 +735,16 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Global');
+		$('.is-language-switch-cb').text('Global - English');
+
 		$('.country-item').removeClass('is-active');
 		$('.country-global').addClass('is-active');
 
-		// flags
+		// flags in footer
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-global').addClass('is-active');
 
+		// flags in Cookiebanner
 		$('.cb_language-icon').removeClass('is-active');
 		$('.cb_language-icon.is-global').addClass('is-active');
 
@@ -696,13 +761,16 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
 		$('.is-language-switch').text('Global');
+		$('.is-language-switch-cb').text('Global - English');
+		
 		$('.country-item').removeClass('is-active');
 		$('.country-global').addClass('is-active');
 
-		// flags
+		// flags in footer
 		$('.footer_language-icon').removeClass('is-active');
 		$('.footer_language-icon.is-global').addClass('is-active');
 
+		// flags in Cookiebanner
 		$('.cb_language-icon').removeClass('is-active');
 		$('.cb_language-icon.is-global').addClass('is-active');
 
