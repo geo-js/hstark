@@ -34,6 +34,7 @@ $('.english-global-lang-switcher').click(function() {
 	Cookies.set('setManualGLOBAL', 'true', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
+	$('.language-switch-popup-cb').toggleClass('is-active');
 
 	$('.english-global-lang-switcher').addClass('is-active');
 	$('.english-global-lang-switcher').addClass('is-visible');
@@ -64,6 +65,7 @@ $('.english-us-lang-switcher').click(function() {
 	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
+	$('.language-switch-popup-cb').toggleClass('is-active');
 
 	$('.english-global-lang-switcher').removeClass('is-active');
 	$('.english-global-lang-switcher').removeClass('is-visible');
@@ -94,6 +96,7 @@ $('.native-lang-de').click(function() {
 	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
+	$('.language-switch-popup-cb').toggleClass('is-active');
 
 	$('.english-global-lang-switcher').removeClass('is-active');
 	$('.english-global-lang-switcher').addClass('is-visible');
@@ -124,6 +127,7 @@ $('.native-lang-at').click(function() {
 	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
+	$('.language-switch-popup-cb').toggleClass('is-active');
 
 	$('.english-global-lang-switcher').removeClass('is-active');
 	$('.english-global-lang-switcher').addClass('is-visible');
@@ -154,6 +158,7 @@ $('.native-lang-ch').click(function() {
 	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
+	$('.language-switch-popup-cb').toggleClass('is-active');
 
 	$('.english-global-lang-switcher').removeClass('is-active');
 	$('.english-global-lang-switcher').addClass('is-visible');
@@ -184,6 +189,7 @@ $('.country-de').click(function() {
 	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
+	$('.language-switch-popup-cb').toggleClass('is-active');
 
 	$('.english-global-lang-switcher').removeClass('is-active');
 	$('.english-global-lang-switcher').addClass('is-visible');
@@ -213,6 +219,7 @@ $('.country-at').click(function() {
 	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
+	$('.language-switch-popup-cb').toggleClass('is-active');
 
 	$('.english-global-lang-switcher').removeClass('is-active');
 	$('.english-global-lang-switcher').addClass('is-visible');
@@ -242,6 +249,7 @@ $('.country-ch').click(function() {
 	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
+	$('.language-switch-popup-cb').toggleClass('is-active');
 
 	$('.english-global-lang-switcher').removeClass('is-active');
 	$('.english-global-lang-switcher').addClass('is-visible');
@@ -272,6 +280,7 @@ $('.country-us').click(function() {
 	Cookies.set('setManualGLOBAL', 'false', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
+	$('.language-switch-popup-cb').toggleClass('is-active');
 
 	$('.english-global-lang-switcher').removeClass('is-active');
 	$('.english-global-lang-switcher').removeClass('is-visible');
@@ -302,6 +311,7 @@ $('.country-global').click(function() {
 	Cookies.set('setManualGLOBAL', 'true', { expires: 1 })
 
 	$('.language-switch-popup').toggleClass('is-active');
+	$('.language-switch-popup-cb').toggleClass('is-active');
 
 	$('.english-global-lang-switcher').addClass('is-active');
 	$('.english-global-lang-switcher').addClass('is-visible');
@@ -635,10 +645,15 @@ $(document).ready(function() {
 	// on click on .footer_language-trigger add class is-active to .language-switch-popup
 	$('.footer_language-trigger').click(function() {
 		$('.language-switch-popup').toggleClass('is-active');
+		$('.language-switch-popup-cb').toggleClass('is-active');
 	});
 	// when hover leave .language-switch-popup remove class is-active
 	$('.language-switch-popup').mouseleave(function() {
 		$('.language-switch-popup').removeClass('is-active');
+	}
+	);
+	$('.language-switch-popup-cb').mouseleave(function() {
+		$('.language-switch-popup-cb').removeClass('is-active');
 	}
 	);
 });
