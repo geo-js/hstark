@@ -403,7 +403,7 @@ $('.country-at').click(function() {
     $('.english-de-lang-switcher').removeClass('is-active');
     $('.english-de-lang-switcher').removeClass('is-visible');
 	$('.english-at-lang-switcher').removeClass('is-active');
-	$('.english-at-lang-switcher').removeClass('is-visible');
+	$('.english-at-lang-switcher').addClass('is-visible');
 	$('.native-lang-de').removeClass('is-active');
 	$('.native-lang-de').removeClass('is-visible');
 	$('.native-lang-at').addClass('is-active');
@@ -804,6 +804,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.english-us-lang-switcher').removeClass('is-active');
         $('.english-de-lang-switcher').removeClass('is-active');
         $('.english-de-lang-switcher').removeClass('is-visible');
+		$('.english-at-lang-switcher').removeClass('is-active');
+		$('.english-at-lang-switcher').addClass('is-visible');
 		$('.native-lang-de').removeClass('is-active');
 		$('.native-lang-de').removeClass('is-visible');
 		$('.native-lang-at').addClass('is-active');
