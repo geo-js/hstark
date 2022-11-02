@@ -720,7 +720,7 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 	}
 
 	// if currentCountry is DE and Cookie SetManualENDE is true
-	else if (currentCountry === 'DE' && Cookies.get('setManualENDE') === 'true') {
+	else if (Cookies.get('setManualENDE') === 'true') {
 		Weglot.switchTo('en');
 		currentLang = Weglot.getCurrentLang();
 
