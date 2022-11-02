@@ -181,7 +181,7 @@ $('.english-at-lang-switcher').click(function() {
 	$('.english-de-lang-switcher').removeClass('is-active');
 	$('.english-de-lang-switcher').removeClass('is-visible');
 	$('.english-at-lang-switcher').addClass('is-active');
-	$('.english-at-lang-switcher').addClass('is-visible');
+	$('.english-at-lang-switcher').removeClass('is-visible');
 	$('.native-lang-de').removeClass('is-active');
 	$('.native-lang-de').removeClass('is-visible');
 	$('.native-lang-at').removeClass('is-active');
