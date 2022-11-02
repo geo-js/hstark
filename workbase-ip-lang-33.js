@@ -749,7 +749,7 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 	}
 
 	// if currentCountry is AT and Cookie SetManualENAT is true
-	else if (currentCountry === 'AT' && Cookies.get('setManualENAT') === 'true') {
+	else if (Cookies.get('setManualENAT') === 'true') {
 		Weglot.switchTo('en');
 		currentLang = Weglot.getCurrentLang();
 		// change text of .is-language-switch to 'Deutschland'
