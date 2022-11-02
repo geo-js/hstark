@@ -1305,10 +1305,12 @@ $(document).ready(function() {
 	// when hover leave .language-switch-popup remove class is-active
 	$('.language-switch-popup').mouseleave(function() {
 		$('.language-switch-popup').removeClass('is-active');
+		$('.language-switch-popup-cb').removeClass('is-active');
 	}
 	);
 	$('.language-switch-popup-cb').mouseleave(function() {
 		$('.language-switch-popup-cb').removeClass('is-active');
+		$('.language-switch-popup').removeClass('is-active');
 	}
 	);
 });
