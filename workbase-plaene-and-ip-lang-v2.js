@@ -1471,6 +1471,146 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
             calculatePricingUS();
         }
 	}
+
+// on .pricing-input-field change
+$('.pricing-input-field').change(function() {
+    // update var selectedMitarbeiterEssential
+    selectedMitarbeiterEssential = $('.pricing-input-field.essential').val();
+    // update var selectedMitarbeiterBusiness
+    selectedMitarbeiterBusiness = $('.pricing-input-field.business').val();
+    // update var selectedMitarbeiterEnterprise
+    selectedMitarbeiterEnterprise = $('.pricing-input-field.enterprise').val();
+
+    // insert value in the text fields beneath switcher
+    $('.selected-mitarbeiter.essential').text(selectedMitarbeiterEssential);
+    $('.selected-mitarbeiter.business').text(selectedMitarbeiterBusiness);
+    $('.selected-mitarbeiter.enterprise').text(selectedMitarbeiterEnterprise);
+
+    // if this has subclass .essential 
+    if ($(this).hasClass('essential')) {
+        // dont allow user to input below 6 and only allow input in steps of 3
+        if (selectedMitarbeiterEssential < 6) {
+            $('.pricing-input-field.essential').val(6);
+        } else if (selectedMitarbeiterEssential % 3 != 0) {
+            $('.pricing-input-field.essential').val(Math.floor(selectedMitarbeiterEssential / 3) * 3);
+        }
+    }
+
+    // if this has subclass .business
+    if ($(this).hasClass('business')) {
+        // dont allow user to input below 20 and only allow input in steps of 10
+        if (selectedMitarbeiterBusiness < 20) {
+            $('.pricing-input-field.business').val(20);
+        } else if (selectedMitarbeiterBusiness % 10 != 0) {
+            $('.pricing-input-field.business').val(Math.floor(selectedMitarbeiterBusiness / 10) * 10);
+        }
+    }
+
+    // if this has subclass .enterprise
+    if ($(this).hasClass('enterprise')) {
+        // dont allow user to input below 100 and only allow input in steps of 25
+        if (selectedMitarbeiterEnterprise < 100) {
+            $('.pricing-input-field.enterprise').val(100);
+        } else if (selectedMitarbeiterEnterprise % 25 != 0) {
+            $('.pricing-input-field.enterprise').val(Math.floor(selectedMitarbeiterEnterprise / 25) * 25);
+        }
+    }
+
+    // If DE
+    if (currentCountry === 'DE' && Cookies.get('setManualDE') === 'false' && Cookies.get('setManualEN') === 'false' && Cookies.get('setManualAT') === 'false' && Cookies.get('setManualCH') === 'false' && Cookies.get('setManualGLOBAL') === 'false' && Cookies.get('setManualENDE') === 'false' && Cookies.get('setManualENAT') === 'false' && Cookies.get('setManualENCH') === 'false') {
+        // call function calculatePricing
+        calculatePricingDEAT();
+    }
+
+    else if (currentCountry === 'DE' && Cookies.get('setManualDE') === undefined && Cookies.get('setManualEN') === undefined && Cookies.get('setManualAT') === undefined && Cookies.get('setManualCH') === undefined && Cookies.get('setManualGLOBAL') === undefined && Cookies.get('setManualENDE') === undefined && Cookies.get('setManualENAT') === undefined && Cookies.get('setManualENCH') === undefined) {
+        // call function calculatePricing
+        calculatePricingDEAT();
+    }
+
+    else if (Cookies.get('setManualENDE') === 'true') {
+        // call function calculatePricing
+        calculatePricingDEAT();
+    }
+    
+    if (Cookies.get('setManualDE') === 'true') {
+        // call function calculatePricing
+        calculatePricingDEAT();
+    }
+
+    // If AT
+    if (currentCountry === 'AT' && Cookies.get('setManualDE') === 'false' && Cookies.get('setManualEN') === 'false' && Cookies.get('setManualAT') === 'false' && Cookies.get('setManualCH') === 'false' && Cookies.get('setManualGLOBAL') === 'false' && Cookies.get('setManualENDE') === 'false' && Cookies.get('setManualENAT') === 'false' && Cookies.get('setManualENCH') === 'false') {
+        // call function calculatePricing
+        calculatePricingDEAT();
+    }
+
+    else if (currentCountry === 'AT' && Cookies.get('setManualDE') === undefined && Cookies.get('setManualEN') === undefined && Cookies.get('setManualAT') === undefined && Cookies.get('setManualCH') === undefined && Cookies.get('setManualGLOBAL') === undefined && Cookies.get('setManualENDE') === undefined && Cookies.get('setManualENAT') === undefined && Cookies.get('setManualENCH') === undefined) {
+        // call function calculatePricing
+        calculatePricingDEAT();
+    }
+
+    if (Cookies.get('setManualENAT') === 'true') {
+        // call function calculatePricing
+        calculatePricingDEAT();
+    }
+    
+    if (Cookies.get('setManualAT') === 'true') {
+        // call function calculatePricing
+        calculatePricingDEAT();
+    }
+
+    // If CH
+    if (currentCountry === 'CH' && Cookies.get('setManualDE') === 'false' && Cookies.get('setManualEN') === 'false' && Cookies.get('setManualAT') === 'false' && Cookies.get('setManualCH') === 'false' && Cookies.get('setManualGLOBAL') === 'false' && Cookies.get('setManualENDE') === 'false' && Cookies.get('setManualENAT') === 'false' && Cookies.get('setManualENCH') === 'false') {  
+        // call function calculatePricing
+        calculatePricingCH();
+    }
+
+    else if (currentCountry === 'CH' && Cookies.get('setManualDE') === undefined && Cookies.get('setManualEN') === undefined && Cookies.get('setManualAT') === undefined && Cookies.get('setManualCH') === undefined && Cookies.get('setManualGLOBAL') === undefined && Cookies.get('setManualENDE') === undefined && Cookies.get('setManualENAT') === undefined && Cookies.get('setManualENCH') === undefined) { 
+        // call function calculatePricing
+        calculatePricingCH();
+    }
+
+    if (Cookies.get('setManualENCH') === 'true') {
+        // call function calculatePricing
+        calculatePricingCH();
+    }
+
+    if (Cookies.get('setManualCH') === 'true') { 
+        // call function calculatePricing
+        calculatePricingCH();
+    }
+
+    // If US
+    if (currentCountry === 'US' && Cookies.get('setManualEN') === 'false' && Cookies.get('setManualDE') === 'false' && Cookies.get('setManualAT') === 'false' && Cookies.get('setManualCH') === 'false' && Cookies.get('setManualGLOBAL') === 'false' && Cookies.get('setManualENDE') === 'false' && Cookies.get('setManualENAT') === 'false' && Cookies.get('setManualENCH') === 'false') { 
+        // call function calculatePricing
+        calculatePricingUS();
+    }
+
+    else if (currentCountry === 'US' && Cookies.get('setManualDE') === undefined && Cookies.get('setManualEN') === undefined && Cookies.get('setManualAT') === undefined && Cookies.get('setManualCH') === undefined && Cookies.get('setManualGLOBAL') === undefined && Cookies.get('setManualENDE') === undefined && Cookies.get('setManualENAT') === undefined && Cookies.get('setManualENCH') === undefined) {  
+        // call function calculatePricing
+        calculatePricingUS();
+    }
+
+    if (Cookies.get('setManualEN') === 'true') {   
+        // call function calculatePricing
+        calculatePricingUS();
+    }
+
+    // If GLOBAL
+    if (currentCountry !== 'DE' && currentCountry !== 'AT' && currentCountry !== 'CH' && currentCountry !== 'US' && Cookies.get('setManualDE') === 'false' && Cookies.get('setManualEN') === 'false' && Cookies.get('setManualAT') === 'false' && Cookies.get('setManualCH') === 'false' && Cookies.get('setManualGLOBAL') === 'false' && Cookies.get('setManualENDE') === 'false' && Cookies.get('setManualENAT') === 'false' && Cookies.get('setManualENCH') === 'false') { 
+        // call function calculatePricing
+        calculatePricingUS();
+    }
+
+    else if (currentCountry !== 'DE' && currentCountry !== 'AT' && currentCountry !== 'CH' && currentCountry !== 'US' && Cookies.get('setManualDE') === undefined && Cookies.get('setManualEN') === undefined && Cookies.get('setManualAT') === undefined && Cookies.get('setManualCH') === undefined && Cookies.get('setManualGLOBAL') === undefined && Cookies.get('setManualENDE') === undefined && Cookies.get('setManualENAT') === undefined && Cookies.get('setManualENCH') === undefined) {    
+        // call function calculatePricing
+        calculatePricingUS();
+    }
+
+    if (Cookies.get('setManualGLOBAL') === 'true') {
+        // call function calculatePricing
+        calculatePricingUS();
+    }
+
 })
 
 // open weglot popup
@@ -1670,6 +1810,7 @@ $(document).ready(function() {
 
 // ----------------- Click Switcher Scripts ----------------- //
 $('.pricing_switcher-monthly').click(function() {
+
     $('.pricing_switcher-toggle').removeClass('is-yearly');
     $('.pricing_switcher-monthly').addClass('is-active');
     $('.pricing_switcher-yearly').removeClass('is-active');
@@ -2015,7 +2156,6 @@ $('.pricing_switcher-yearly').click(function() {
     }
 });
 
-
 // on click of .pricing-up and or .pricing-down
 $('.pricing-up, .pricing-down').click(function() {
     // update var selectedMitarbeiterEssential
@@ -2126,144 +2266,6 @@ $('.pricing-up, .pricing-down').click(function() {
     }
 });
 
-// on .pricing-input-field change
-$('.pricing-input-field').change(function() {
-    // update var selectedMitarbeiterEssential
-    selectedMitarbeiterEssential = $('.pricing-input-field.essential').val();
-    // update var selectedMitarbeiterBusiness
-    selectedMitarbeiterBusiness = $('.pricing-input-field.business').val();
-    // update var selectedMitarbeiterEnterprise
-    selectedMitarbeiterEnterprise = $('.pricing-input-field.enterprise').val();
-
-    // insert value in the text fields beneath switcher
-    $('.selected-mitarbeiter.essential').text(selectedMitarbeiterEssential);
-    $('.selected-mitarbeiter.business').text(selectedMitarbeiterBusiness);
-    $('.selected-mitarbeiter.enterprise').text(selectedMitarbeiterEnterprise);
-
-    // if this has subclass .essential 
-    if ($(this).hasClass('essential')) {
-        // dont allow user to input below 6 and only allow input in steps of 3
-        if (selectedMitarbeiterEssential < 6) {
-            $('.pricing-input-field.essential').val(6);
-        } else if (selectedMitarbeiterEssential % 3 != 0) {
-            $('.pricing-input-field.essential').val(Math.floor(selectedMitarbeiterEssential / 3) * 3);
-        }
-    }
-
-    // if this has subclass .business
-    if ($(this).hasClass('business')) {
-        // dont allow user to input below 20 and only allow input in steps of 10
-        if (selectedMitarbeiterBusiness < 20) {
-            $('.pricing-input-field.business').val(20);
-        } else if (selectedMitarbeiterBusiness % 10 != 0) {
-            $('.pricing-input-field.business').val(Math.floor(selectedMitarbeiterBusiness / 10) * 10);
-        }
-    }
-
-    // if this has subclass .enterprise
-    if ($(this).hasClass('enterprise')) {
-        // dont allow user to input below 100 and only allow input in steps of 25
-        if (selectedMitarbeiterEnterprise < 100) {
-            $('.pricing-input-field.enterprise').val(100);
-        } else if (selectedMitarbeiterEnterprise % 25 != 0) {
-            $('.pricing-input-field.enterprise').val(Math.floor(selectedMitarbeiterEnterprise / 25) * 25);
-        }
-    }
-
-    // If DE
-    if (currentCountry === 'DE' && Cookies.get('setManualDE') === 'false' && Cookies.get('setManualEN') === 'false' && Cookies.get('setManualAT') === 'false' && Cookies.get('setManualCH') === 'false' && Cookies.get('setManualGLOBAL') === 'false' && Cookies.get('setManualENDE') === 'false' && Cookies.get('setManualENAT') === 'false' && Cookies.get('setManualENCH') === 'false') {
-        // call function calculatePricing
-        calculatePricingDEAT();
-    }
-
-    else if (currentCountry === 'DE' && Cookies.get('setManualDE') === undefined && Cookies.get('setManualEN') === undefined && Cookies.get('setManualAT') === undefined && Cookies.get('setManualCH') === undefined && Cookies.get('setManualGLOBAL') === undefined && Cookies.get('setManualENDE') === undefined && Cookies.get('setManualENAT') === undefined && Cookies.get('setManualENCH') === undefined) {
-        // call function calculatePricing
-        calculatePricingDEAT();
-    }
-
-    else if (Cookies.get('setManualENDE') === 'true') {
-        // call function calculatePricing
-        calculatePricingDEAT();
-    }
-    
-    if (Cookies.get('setManualDE') === 'true') {
-        // call function calculatePricing
-        calculatePricingDEAT();
-    }
-
-    // If AT
-    if (currentCountry === 'AT' && Cookies.get('setManualDE') === 'false' && Cookies.get('setManualEN') === 'false' && Cookies.get('setManualAT') === 'false' && Cookies.get('setManualCH') === 'false' && Cookies.get('setManualGLOBAL') === 'false' && Cookies.get('setManualENDE') === 'false' && Cookies.get('setManualENAT') === 'false' && Cookies.get('setManualENCH') === 'false') {
-        // call function calculatePricing
-        calculatePricingDEAT();
-    }
-
-    else if (currentCountry === 'AT' && Cookies.get('setManualDE') === undefined && Cookies.get('setManualEN') === undefined && Cookies.get('setManualAT') === undefined && Cookies.get('setManualCH') === undefined && Cookies.get('setManualGLOBAL') === undefined && Cookies.get('setManualENDE') === undefined && Cookies.get('setManualENAT') === undefined && Cookies.get('setManualENCH') === undefined) {
-        // call function calculatePricing
-        calculatePricingDEAT();
-    }
-
-    if (Cookies.get('setManualENAT') === 'true') {
-        // call function calculatePricing
-        calculatePricingDEAT();
-    }
-    
-    if (Cookies.get('setManualAT') === 'true') {
-        // call function calculatePricing
-        calculatePricingDEAT();
-    }
-
-    // If CH
-    if (currentCountry === 'CH' && Cookies.get('setManualDE') === 'false' && Cookies.get('setManualEN') === 'false' && Cookies.get('setManualAT') === 'false' && Cookies.get('setManualCH') === 'false' && Cookies.get('setManualGLOBAL') === 'false' && Cookies.get('setManualENDE') === 'false' && Cookies.get('setManualENAT') === 'false' && Cookies.get('setManualENCH') === 'false') {  
-        // call function calculatePricing
-        calculatePricingCH();
-    }
-
-    else if (currentCountry === 'CH' && Cookies.get('setManualDE') === undefined && Cookies.get('setManualEN') === undefined && Cookies.get('setManualAT') === undefined && Cookies.get('setManualCH') === undefined && Cookies.get('setManualGLOBAL') === undefined && Cookies.get('setManualENDE') === undefined && Cookies.get('setManualENAT') === undefined && Cookies.get('setManualENCH') === undefined) { 
-        // call function calculatePricing
-        calculatePricingCH();
-    }
-
-    if (Cookies.get('setManualENCH') === 'true') {
-        // call function calculatePricing
-        calculatePricingCH();
-    }
-
-    if (Cookies.get('setManualCH') === 'true') { 
-        // call function calculatePricing
-        calculatePricingCH();
-    }
-
-    // If US
-    if (currentCountry === 'US' && Cookies.get('setManualEN') === 'false' && Cookies.get('setManualDE') === 'false' && Cookies.get('setManualAT') === 'false' && Cookies.get('setManualCH') === 'false' && Cookies.get('setManualGLOBAL') === 'false' && Cookies.get('setManualENDE') === 'false' && Cookies.get('setManualENAT') === 'false' && Cookies.get('setManualENCH') === 'false') { 
-        // call function calculatePricing
-        calculatePricingUS();
-    }
-
-    else if (currentCountry === 'US' && Cookies.get('setManualDE') === undefined && Cookies.get('setManualEN') === undefined && Cookies.get('setManualAT') === undefined && Cookies.get('setManualCH') === undefined && Cookies.get('setManualGLOBAL') === undefined && Cookies.get('setManualENDE') === undefined && Cookies.get('setManualENAT') === undefined && Cookies.get('setManualENCH') === undefined) {  
-        // call function calculatePricing
-        calculatePricingUS();
-    }
-
-    if (Cookies.get('setManualEN') === 'true') {   
-        // call function calculatePricing
-        calculatePricingUS();
-    }
-
-    // If GLOBAL
-    if (currentCountry !== 'DE' && currentCountry !== 'AT' && currentCountry !== 'CH' && currentCountry !== 'US' && Cookies.get('setManualDE') === 'false' && Cookies.get('setManualEN') === 'false' && Cookies.get('setManualAT') === 'false' && Cookies.get('setManualCH') === 'false' && Cookies.get('setManualGLOBAL') === 'false' && Cookies.get('setManualENDE') === 'false' && Cookies.get('setManualENAT') === 'false' && Cookies.get('setManualENCH') === 'false') { 
-        // call function calculatePricing
-        calculatePricingUS();
-    }
-
-    else if (currentCountry !== 'DE' && currentCountry !== 'AT' && currentCountry !== 'CH' && currentCountry !== 'US' && Cookies.get('setManualDE') === undefined && Cookies.get('setManualEN') === undefined && Cookies.get('setManualAT') === undefined && Cookies.get('setManualCH') === undefined && Cookies.get('setManualGLOBAL') === undefined && Cookies.get('setManualENDE') === undefined && Cookies.get('setManualENAT') === undefined && Cookies.get('setManualENCH') === undefined) {    
-        // call function calculatePricing
-        calculatePricingUS();
-    }
-
-    if (Cookies.get('setManualGLOBAL') === 'true') {
-        // call function calculatePricing
-        calculatePricingUS();
-    }
 });
 
 // ----------------- Calculate DEAT Pricing ----------------- //
