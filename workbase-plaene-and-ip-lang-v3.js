@@ -2452,7 +2452,7 @@ function calculatePricingCH() {
           // calculate price pro mitarbeiter
           var priceProMitarbeiterEssentialYearlyCH = priceYearlyEssentialCH / 3;
           // insert priceProMitarbeiterEssentialYearlyCH in .preis-pro-mitarbeiter.esential add . after every 3 digits and add € at the end
-          $('.preis-pro-mitarbeiter.essential').html(priceProMitarbeiterEssentialYearlyCH.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + ' CHF');
+          $('.preis-pro-mitarbeiter.essential').html(priceProMitarbeiterEssentialYearlyCH.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + ' CHF');
 
           var priceProMitarbeiterBusinessYearlyCH = priceYearlyBusinessCH / 10;
           // insert priceProMitarbeiterBusinessYearlyCH in .preis-pro-mitarbeiter.business add . after every 3 digits and add € at the end
