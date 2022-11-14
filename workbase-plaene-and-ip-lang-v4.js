@@ -2329,15 +2329,15 @@ function calculatePricingDEAT() {
             // calculate price pro mitarbeiter
             var priceProMitarbeiterEssentialYearlyDEAT = priceYearlyEssentialDEAT / 3;
             // insert priceProMitarbeiterEssentialYearlyDEAT in .preis-pro-mitarbeiter.esential add . after every 3 digits and add € at the end
-            $('.preis-pro-mitarbeiter.essential').html(priceProMitarbeiterEssentialYearlyDEAT.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + ' €');
+            $('.preis-pro-mitarbeiter.essential').html(priceProMitarbeiterEssentialYearlyDEAT.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + ' €');
 
             var priceProMitarbeiterBusinessYearlyDEAT = priceYearlyBusinessDEAT / 10;
             // insert priceProMitarbeiterBusinessYearlyDEAT in .preis-pro-mitarbeiter.business add . after every 3 digits and add € at the end
-            $('.preis-pro-mitarbeiter.business').html(priceProMitarbeiterBusinessYearlyDEAT.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + ' €');
+            $('.preis-pro-mitarbeiter.business').html(priceProMitarbeiterBusinessYearlyDEAT.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + ' €');
 
             var priceProMitarbeiterEnterpriseYearlyDEAT = priceYearlyEnterpriseDEAT / 25;
             // insert priceProMitarbeiterEnterpriseYearlyDEAT in .preis-pro-mitarbeiter.enterprise add . after every 3 digits and add € at the end
-            $('.preis-pro-mitarbeiter.enterprise').html(priceProMitarbeiterEnterpriseYearlyDEAT.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + ' €');
+            $('.preis-pro-mitarbeiter.enterprise').html(priceProMitarbeiterEnterpriseYearlyDEAT.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + ' €');
 
             // set .price-result-yearly to display inline
             $('.price-result-yearly').css('display', 'inline');
@@ -2456,11 +2456,11 @@ function calculatePricingCH() {
 
           var priceProMitarbeiterBusinessYearlyCH = priceYearlyBusinessCH / 10;
           // insert priceProMitarbeiterBusinessYearlyCH in .preis-pro-mitarbeiter.business add . after every 3 digits and add € at the end
-          $('.preis-pro-mitarbeiter.business').html(priceProMitarbeiterBusinessYearlyCH.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + ' CHF');
+          $('.preis-pro-mitarbeiter.business').html(priceProMitarbeiterBusinessYearlyCH.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + ' CHF');
 
           var priceProMitarbeiterEnterpriseYearlyCH = priceYearlyEnterpriseCH / 25;
           // insert priceProMitarbeiterEnterpriseYearlyCH in .preis-pro-mitarbeiter.enterprise add . after every 3 digits and add € at the end
-          $('.preis-pro-mitarbeiter.enterprise').html(priceProMitarbeiterEnterpriseYearlyCH.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + ' CHF');
+          $('.preis-pro-mitarbeiter.enterprise').html(priceProMitarbeiterEnterpriseYearlyCH.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + ' CHF');
 
           // set .price-result-yearly to display inline
           $('.price-result-yearly').css('display', 'inline');
@@ -2575,15 +2575,15 @@ function calculatePricingUS() {
             // calculate price pro mitarbeiter
             var priceProMitarbeiterEssentialYearlyUS = priceYearlyEssentialUS / 3;
             // insert priceProMitarbeiterEssentialYearlyUS in .preis-pro-mitarbeiter.esential add . after every 3 digits and add € at the end
-            $('.preis-pro-mitarbeiter.essential').html(priceProMitarbeiterEssentialYearlyUS.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + ' USD');
+            $('.preis-pro-mitarbeiter.essential').html(priceProMitarbeiterEssentialYearlyUS.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + ' USD');
 
             var priceProMitarbeiterBusinessYearlyUS = priceYearlyBusinessUS / 10;
             // insert priceProMitarbeiterBusinessYearlyUS in .preis-pro-mitarbeiter.business add . after every 3 digits and add € at the end
-            $('.preis-pro-mitarbeiter.business').html(priceProMitarbeiterBusinessYearlyUS.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + ' USD');
+            $('.preis-pro-mitarbeiter.business').html(priceProMitarbeiterBusinessYearlyUS.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + ' USD');
 
             var priceProMitarbeiterEnterpriseYearlyUS = priceYearlyEnterpriseUS / 25;
             // insert priceProMitarbeiterEnterpriseYearlyCH in .preis-pro-mitarbeiter.enterprise add . after every 3 digits and add € at the end
-            $('.preis-pro-mitarbeiter.enterprise').html(priceProMitarbeiterEnterpriseYearlyUS.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + ' USD');
+            $('.preis-pro-mitarbeiter.enterprise').html(priceProMitarbeiterEnterpriseYearlyUS.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + ' USD');
 
             // set .price-result-yearly to display inline
             $('.price-result-yearly').css('display', 'inline');
