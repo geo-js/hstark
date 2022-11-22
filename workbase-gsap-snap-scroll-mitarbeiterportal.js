@@ -209,3 +209,28 @@ $("#section-h").each(function (index) {
         { backgroundColor: "rgba(255, 255, 255, 1)", width: "0.25rem", opacity: 1, duration: 0.2 }, 
         0);
 });
+
+// Section Footer
+$("#section-h").each(function (index) {
+    let triggerElement = $(this);
+    let targetElement1 = $(".footer-holder");
+
+    let tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: triggerElement,
+            // trigger element - viewport
+            start: "top top",
+            end: "bottom bottom",
+            scrub: 1
+        }
+    });
+    // 0 at end equals offset of 0 seconds, so it starts with the first timeline elemenet (targetElement1) 
+      tl.fromTo(targetElement1, 
+      {
+          opacity: 0,
+      }, 
+      {
+          opacity: 1,
+          duration: 0.05
+      }, 0);
+});
