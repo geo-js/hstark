@@ -5,6 +5,8 @@ ScrollTrigger.defaults({
     markers: false
 });
 
+// at media above 991px
+if (window.matchMedia("(min-width: 992px)").matches) {
 $("#section-b").each(function (index) {
     let triggerElement = $(this);
     let targetElement1 = $(".scrolldown-wrapper");
@@ -234,3 +236,5 @@ $("#section-h").each(function (index) {
           duration: 0.05
       }, 0);
 });
+
+}
