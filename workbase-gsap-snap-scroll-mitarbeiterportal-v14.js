@@ -36,9 +36,13 @@ $("#section-a").each(function (index) {
     let targetActive = $("#indicator-a");
     let targetAfter = $("#indicator-b");
 
+    let textActive = $("#indicator-text-a");
+    let textAfter = $("#indicator-text-b");
+
     let tl = gsap.timeline({
         scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 1 }
     });
+
     // targetActive #indicator-a
     tl.to(targetActive, 
         { backgroundColor: "rgba(11, 29, 55, 1)", width: "0.25rem", opacity: 1, duration: 0.2 }, 
@@ -46,6 +50,15 @@ $("#section-a").each(function (index) {
     // targetAfter #indicator-b
     tl.to(targetAfter,
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
+        0);
+
+    // textActive #indicator-text-a
+    tl.to(textActive,
+        { opacity: 1, duration: 0.2 },
+        0);
+    // textAfter #indicator-text-b
+    tl.to(textAfter,
+        { opacity: 0, duration: 0.2 },
         0);
 });
 
@@ -55,6 +68,10 @@ $("#section-b").each(function (index) {
     let targetBefore = $("#indicator-a");
     let targetActive = $("#indicator-b");
     let targetAfter = $("#indicator-c");
+
+    let textBefore = $("#indicator-text-a");
+    let textActive = $("#indicator-text-b");
+    let textAfter = $("#indicator-text-c");
 
     let tl = gsap.timeline({
         scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 1 }
@@ -70,6 +87,19 @@ $("#section-b").each(function (index) {
     // targetAfter #indicator-c
     tl.to(targetAfter,
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
+        0);
+    
+    // textBefore #indicator-text-a
+    tl.to(textBefore,
+        { opacity: 0, duration: 0.2 },
+        0);
+    // textActive #indicator-text-b
+    tl.to(textActive,
+        { opacity: 1, duration: 0.2 },
+        0);
+    // textAfter #indicator-text-c
+    tl.to(textAfter,
+        { opacity: 0, duration: 0.2 },
         0);
 });
 
