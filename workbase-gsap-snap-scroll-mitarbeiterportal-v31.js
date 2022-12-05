@@ -105,9 +105,9 @@ $("#section-b").each(function (index) {
     
     // toggle class is-active to textActive
     tl.to(textActive,
-        { className: "+=is-active", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper is-active", duration: 0.2 },
         0);
-        
+
 });
 
 // Section 3 #section-c
