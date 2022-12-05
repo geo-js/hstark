@@ -54,11 +54,11 @@ $("#section-a").each(function (index) {
 
     // textActive #indicator-text-a
     tl.to(textActive,
-        { opacity: 1, duration: 0.2 },
+        { opacity: 1, duration: 0 },
         0);
     // textAfter #indicator-text-b
     tl.to(textAfter,
-        { opacity: 0, duration: 0.2 },
+        { opacity: 0, duration: 0 },
         0);
 });
 
@@ -91,15 +91,15 @@ $("#section-b").each(function (index) {
     
     // textBefore #indicator-text-a
     tl.to(textBefore,
-        { opacity: 0, duration: 0.2 },
+        { opacity: 0, duration: 0 },
         0);
     // textActive #indicator-text-b
     tl.to(textActive,
-        { opacity: 1, duration: 0.2 },
+        { opacity: 1, duration: 0 },
         0);
     // textAfter #indicator-text-c
     tl.to(textAfter,
-        { opacity: 0, duration: 0.2 },
+        { opacity: 0, duration: 0 },
         0);
 });
 
@@ -109,6 +109,10 @@ $("#section-c").each(function (index) {
     let targetBefore = $("#indicator-b");
     let targetActive = $("#indicator-c");
     let targetAfter = $("#indicator-d");
+
+    let textBefore = $("#indicator-text-b");
+    let textActive = $("#indicator-text-c");
+    let textAfter = $("#indicator-text-d");
 
     let tl = gsap.timeline({
         scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 1 }
@@ -125,6 +129,19 @@ $("#section-c").each(function (index) {
     tl.to(targetAfter,
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
+
+    // textBefore #indicator-text-b
+    tl.to(textBefore,
+        { opacity: 0, duration: 0 },
+        0);
+    // textActive #indicator-text-c
+    tl.to(textActive,
+        { opacity: 1, duration: 0 },
+        0);
+    // textAfter #indicator-text-d
+    tl.to(textAfter,
+        { opacity: 0, duration: 0 },
+        0);
 });
 
 // Section 4 #section-d
@@ -133,6 +150,10 @@ $("#section-d").each(function (index) {
     let targetBefore = $("#indicator-c");
     let targetActive = $("#indicator-d");
     let targetAfter = $("#indicator-e");
+
+    let textBefore = $("#indicator-text-c");
+    let textActive = $("#indicator-text-d");
+    let textAfter = $("#indicator-text-e");
 
     let tl = gsap.timeline({
         scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 1}
@@ -149,6 +170,19 @@ $("#section-d").each(function (index) {
     tl.to(targetAfter,
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
+
+    // textBefore #indicator-text-c
+    tl.to(textBefore,
+        { opacity: 0, duration: 0 },
+        0);
+    // textActive #indicator-text-d
+    tl.to(textActive,
+        { opacity: 1, duration: 0 },
+        0);
+    // textAfter #indicator-text-e
+    tl.to(textAfter,
+        { opacity: 0, duration: 0 },
+        0);
 });
 
 // Section 5 #section-e
@@ -157,6 +191,10 @@ $("#section-e").each(function (index) {
     let targetBefore = $("#indicator-d");
     let targetActive = $("#indicator-e");
     let targetAfter = $("#indicator-f");
+
+    let textBefore = $("#indicator-text-d");
+    let textActive = $("#indicator-text-e");
+    let textAfter = $("#indicator-text-f");
 
     let tl = gsap.timeline({
         scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 1}
@@ -173,6 +211,19 @@ $("#section-e").each(function (index) {
     tl.to(targetAfter,
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
+    
+    // textBefore #indicator-text-d
+    tl.to(textBefore,
+        { opacity: 0, duration: 0 },
+        0);
+    // textActive #indicator-text-e
+    tl.to(textActive,
+        { opacity: 1, duration: 0 },
+        0);
+    // textAfter #indicator-text-f
+    tl.to(textAfter,
+        { opacity: 0, duration: 0 },
+        0);
 });
 
 // Section 6 #section-f
@@ -181,6 +232,10 @@ $("#section-f").each(function (index) {
     let targetBefore = $("#indicator-e");
     let targetActive = $("#indicator-f");
     let targetAfter = $("#indicator-g");
+
+    let textBefore = $("#indicator-text-e");
+    let textActive = $("#indicator-text-f");
+    let textAfter = $("#indicator-text-g");
 
     let tl = gsap.timeline({
         scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 1}
@@ -197,6 +252,19 @@ $("#section-f").each(function (index) {
     tl.to(targetAfter,
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
+
+    // textBefore #indicator-text-e
+    tl.to(textBefore,
+        { opacity: 0, duration: 0 },
+        0);
+    // textActive #indicator-text-f
+    tl.to(textActive,
+        { opacity: 1, duration: 0 },
+        0);
+    // textAfter #indicator-text-g
+    tl.to(textAfter,
+        { opacity: 0, duration: 0 },
+        0);
 });
 
 // Section 7 #section-g
@@ -205,6 +273,10 @@ $("#section-g").each(function (index) {
     let targetBefore = $("#indicator-f");
     let targetActive = $("#indicator-g");
     let targetAfter = $("#indicator-h");
+
+    let textBefore = $("#indicator-text-f");
+    let textActive = $("#indicator-text-g");
+    let textAfter = $("#indicator-text-h");
 
     let tl = gsap.timeline({
         scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 1}
@@ -221,6 +293,19 @@ $("#section-g").each(function (index) {
     tl.to(targetAfter,
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
+
+    // textBefore #indicator-text-f
+    tl.to(textBefore,
+        { opacity: 0, duration: 0 },
+        0);
+    // textActive #indicator-text-g
+    tl.to(textActive,
+        { opacity: 1, duration: 0 },
+        0);
+    // textAfter #indicator-text-h
+    tl.to(textAfter,
+        { opacity: 0, duration: 0 },
+        0);
 });
 
 // Section 8 #section-h
@@ -228,6 +313,9 @@ $("#section-h").each(function (index) {
     let triggerElement = $(this);
     let targetBefore = $("#indicator-g");
     let targetActive = $("#indicator-h");
+
+    let textBefore = $("#indicator-text-g");
+    let textActive = $("#indicator-text-h");
 
     let tl = gsap.timeline({
         scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 1}
@@ -239,6 +327,15 @@ $("#section-h").each(function (index) {
     // targetActive #indicator-h
     tl.to(targetActive, 
         { backgroundColor: "rgba(255, 255, 255, 1)", width: "0.25rem", opacity: 1, duration: 0.2 }, 
+        0);
+
+    // textBefore #indicator-text-g
+    tl.to(textBefore,
+        { opacity: 0, duration: 0 },
+        0);
+    // textActive #indicator-text-h
+    tl.to(textActive,
+        { opacity: 1, duration: 0 },
         0);
 });
 
