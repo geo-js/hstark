@@ -102,6 +102,11 @@ $("#section-b").each(function (index) {
     tl.to(textAfter,
         { opacity: 0, duration: 0.2 },
         0);
+    
+    // textActive #indicator-text-b
+    tl.to(textActive,
+        { opacity: 0, duration: 0.2 },
+        12);
 });
 
 // Section 3 #section-c
@@ -178,7 +183,7 @@ $("#section-d").each(function (index) {
         0);
     // textActive #indicator-text-d
     tl.to(textActive,
-        { opacity: 1, duration: 0.2 },
+        { opacity: 1, color: "#ffffff", duration: 0.2 },
         0);
     // textAfter #indicator-text-e
     tl.to(textAfter,
