@@ -89,28 +89,19 @@ $("#section-b").each(function (index) {
     tl.to(targetAfter,
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
-    
-    // textBefore #indicator-text-a
-    tl.to(textBefore,
-        { opacity: 0, duration: 0.2 },
-        0);
-    // textActive #indicator-text-b
-    tl.to(textActive,
-        { opacity: 1, duration: 0.2 },
-        0);
-    // textAfter #indicator-text-c
-    tl.to(textAfter,
-        { opacity: 0, duration: 0.2 },
-        0);
+
     
     // toggle class is-active to textActive
     tl.to(textActive,
         { className: "scroll-indicator-title-wrapper is-active", duration: 0.2 },
         0);
-    // remove class is-active textActive after 5 seconds
-    tl.to(textActive,
+    // remove class is-active from textBefore and textAfter
+    tl.to(textBefore,
         { className: "scroll-indicator-title-wrapper", duration: 0.2 },
-        5);
+        0);
+    tl.to(textAfter,
+        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
+        0);
 });
 
 // Section 3 #section-c
@@ -152,11 +143,6 @@ $("#section-c").each(function (index) {
     tl.to(textAfter,
         { opacity: 0, duration: 0.2 },
         0);
-
-    // remove class is-active from textBefore
-    tl.to(textBefore,
-        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
-    0);
 });
 
 // Section 4 #section-d
