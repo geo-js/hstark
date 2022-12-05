@@ -52,13 +52,8 @@ $("#section-a").each(function (index) {
 
     // activeText #indicator-a-text show for 3 seconds and then with timer of 3 seconds hide
     tl.to(activeText,
-        { opacity: 1, duration: 0.2 },
-        0);
-    // set timeout to hide activeText
-    tl.to(activeText,
         { opacity: 0, duration: 0.2 },
-        6);
-
+        3);
 });
 
 // Section 2 #section-b
