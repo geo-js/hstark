@@ -53,15 +53,6 @@ $("#section-a").each(function (index) {
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
 
-    // textActive #indicator-text-a
-    tl.to(textActive,
-        { opacity: 1, duration: 0.2 },
-        0);
-    // textAfter #indicator-text-b
-    tl.to(textAfter,
-        { opacity: 0, duration: 0.2 },
-        0);
-
     // toggle class is-active to textActive
     tl.to(textActive,
         { className: "scroll-indicator-title-wrapper is-active", duration: 0.2 },
