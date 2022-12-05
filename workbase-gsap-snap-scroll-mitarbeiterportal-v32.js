@@ -107,7 +107,10 @@ $("#section-b").each(function (index) {
     tl.to(textActive,
         { className: "scroll-indicator-title-wrapper is-active", duration: 0.2 },
         0);
-
+    // remove class is-active textActive after 5 seconds
+    tl.to(textActive,
+        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
+        5);
 });
 
 // Section 3 #section-c
@@ -149,6 +152,11 @@ $("#section-c").each(function (index) {
     tl.to(textAfter,
         { opacity: 0, duration: 0.2 },
         0);
+
+    // remove class is-active from textBefore
+    tl.to(textBefore,
+        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
+    0);
 });
 
 // Section 4 #section-d
