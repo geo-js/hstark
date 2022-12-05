@@ -56,7 +56,7 @@ $("#section-a").each(function (index) {
         0);
     tl.to(activeText,
         { opacity: 0, duration: 0.2 },
-        3);
+        30);
 });
 
 // Section 2 #section-b
