@@ -50,13 +50,17 @@ $("#section-a").each(function (index) {
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
 
-    // activeText #indicator-a-text show for 3 seconds and then hide again 
+    // activeText #indicator-a-text show for 3 seconds and then with timer of 3 seconds hide
     tl.to(activeText,
         { opacity: 1, duration: 0.2 },
         0);
-    tl.to(activeText,
+    // set timeout to hide activeText
+    setTimeout(function () {
+        tl.to(activeText,
         { opacity: 0, duration: 0.2 },
-        30);
+        0);
+    }, 3000);
+
 });
 
 // Section 2 #section-b
