@@ -103,10 +103,11 @@ $("#section-b").each(function (index) {
         { opacity: 0, duration: 0.2 },
         0);
     
-    // textActive #indicator-text-b
+    // toggle class is-active to textActive
     tl.to(textActive,
-        { opacity: 0, duration: 0.2 },
-        12);
+        { className: "+=is-active", duration: 0.2 },
+        0);
+        
 });
 
 // Section 3 #section-c
