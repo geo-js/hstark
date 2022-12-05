@@ -95,9 +95,11 @@ $("#section-b").each(function (index) {
         { opacity: 0, duration: 0.2 },
         0);
     // textActive #indicator-text-b
+    onEnter: () => {
     tl.to(textActive,
         { opacity: 1, duration: 0.2 },
         0);
+    }
     // textAfter #indicator-text-c
     tl.to(textAfter,
         { opacity: 0, duration: 0.2 },
