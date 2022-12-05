@@ -131,17 +131,16 @@ $("#section-c").each(function (index) {
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
 
-    // textBefore #indicator-text-b
+    // remove class is-active from textBefore and textAfter
     tl.to(textBefore,
-        { opacity: 0, duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
         0);
-    // textActive #indicator-text-c
+    // toggle class is-active to textActive
     tl.to(textActive,
-        { opacity: 1, duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper is-active", duration: 0.2 },
         0);
-    // textAfter #indicator-text-d
     tl.to(textAfter,
-        { opacity: 0, duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
         0);
 });
 
@@ -172,17 +171,16 @@ $("#section-d").each(function (index) {
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
 
-    // textBefore #indicator-text-c
+    // remove class is-active from textBefore and textAfter
     tl.to(textBefore,
-        { opacity: 0, duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
         0);
-    // textActive #indicator-text-d
+    // toggle class is-active to textActive
     tl.to(textActive,
-        { opacity: 1, color: "#ffffff", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper is-active", duration: 0.2 },
         0);
-    // textAfter #indicator-text-e
     tl.to(textAfter,
-        { opacity: 0, duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
         0);
 });
 
@@ -213,17 +211,16 @@ $("#section-e").each(function (index) {
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
     
-    // textBefore #indicator-text-d
+    // remove class is-active from textBefore and textAfter
     tl.to(textBefore,
-        { opacity: 0, duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
         0);
-    // textActive #indicator-text-e
+    // toggle class is-active to textActive
     tl.to(textActive,
-        { opacity: 1, duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper is-active", duration: 0.2 },
         0);
-    // textAfter #indicator-text-f
     tl.to(textAfter,
-        { opacity: 0, duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
         0);
 });
 
@@ -254,17 +251,16 @@ $("#section-f").each(function (index) {
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
 
-    // textBefore #indicator-text-e
+    // remove class is-active from textBefore and textAfter
     tl.to(textBefore,
-        { opacity: 0, duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
         0);
-    // textActive #indicator-text-f
+    // toggle class is-active to textActive
     tl.to(textActive,
-        { opacity: 1, duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper is-active", duration: 0.2 },
         0);
-    // textAfter #indicator-text-g
     tl.to(textAfter,
-        { opacity: 0, duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
         0);
 });
 
@@ -295,17 +291,16 @@ $("#section-g").each(function (index) {
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
 
-    // textBefore #indicator-text-f
+    // remove class is-active from textBefore and textAfter
     tl.to(textBefore,
-        { opacity: 0, duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
         0);
-    // textActive #indicator-text-g
+    // toggle class is-active to textActive
     tl.to(textActive,
-        { opacity: 1, duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper is-active", duration: 0.2 },
         0);
-    // textAfter #indicator-text-h
     tl.to(textAfter,
-        { opacity: 0, duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
         0);
 });
 
@@ -330,13 +325,13 @@ $("#section-h").each(function (index) {
         { backgroundColor: "rgba(255, 255, 255, 1)", width: "0.25rem", opacity: 1, duration: 0.2 }, 
         0);
 
-    // textBefore #indicator-text-g
+    // remove class is-active from textBefore and textAfter
     tl.to(textBefore,
-        { opacity: 0, duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
         0);
-    // textActive #indicator-text-h
+    // toggle class is-active to textActive
     tl.to(textActive,
-        { opacity: 1, color: "#ffffff", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper is-active", duration: 0.2 },
         0);
 });
 
