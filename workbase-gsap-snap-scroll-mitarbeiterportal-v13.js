@@ -36,8 +36,6 @@ $("#section-a").each(function (index) {
     let targetActive = $("#indicator-a");
     let targetAfter = $("#indicator-b");
 
-    let activeText = $("#indicator-a-text");
-
     let tl = gsap.timeline({
         scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 1 }
     });
@@ -49,10 +47,6 @@ $("#section-a").each(function (index) {
     tl.to(targetAfter,
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
-
-    // activeText #indicator-a-text show for 3 seconds and then with timer of 3 seconds hide
-    tl.fromTo(activeText,
-        { opacity: 1 }, { opacity: 0, duration: 0.2 }, 6);
 });
 
 // Section 2 #section-b
