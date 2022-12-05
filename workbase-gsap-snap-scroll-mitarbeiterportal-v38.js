@@ -41,7 +41,7 @@ $("#section-a").each(function (index) {
     let textAfter = $("#indicator-text-b");
 
     let tl = gsap.timeline({
-        scrollTrigger: { trigger: triggerElement, start: "top center", end: "90% bottom", scrub: 1 }
+        scrollTrigger: { trigger: triggerElement, start: "top center", end: "center center", scrub: 1 }
     });
 
     // targetActive #indicator-a
@@ -75,7 +75,7 @@ $("#section-b").each(function (index) {
     let textAfter = $("#indicator-text-c");
 
     let tl = gsap.timeline({
-        scrollTrigger: { trigger: triggerElement, start: "top center", end: "90% bottom", scrub: 1 }
+        scrollTrigger: { trigger: triggerElement, start: "top center", end: "center center", scrub: 1 }
     });
     // targetBefore #indicator-a
     tl.to(targetBefore, 
@@ -116,7 +116,7 @@ $("#section-c").each(function (index) {
     let textAfter = $("#indicator-text-d");
 
     let tl = gsap.timeline({
-        scrollTrigger: { trigger: triggerElement, start: "top center", end: "90% bottom", scrub: 1 }
+        scrollTrigger: { trigger: triggerElement, start: "top center", end: "center center", scrub: 1 }
     });
     // targetBefore #indicator-b
     tl.to(targetBefore, 
