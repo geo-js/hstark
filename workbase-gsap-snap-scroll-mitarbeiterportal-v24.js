@@ -75,7 +75,7 @@ $("#section-b").each(function (index) {
     let textAfter = $("#indicator-text-c");
 
     let tl = gsap.timeline({
-        scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 1 }
+        scrollTrigger: { trigger: triggerElement, start: "top top", end: "bottom bottom", scrub: 1 }
     });
     // targetBefore #indicator-a
     tl.to(targetBefore, 
