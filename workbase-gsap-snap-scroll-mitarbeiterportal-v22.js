@@ -75,7 +75,10 @@ $("#section-b").each(function (index) {
     let textAfter = $("#indicator-text-c");
 
     let tl = gsap.timeline({
-        scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 1 }
+        scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 1 },
+        defaults: {
+            overwrite: true
+        }
     });
     // targetBefore #indicator-a
     tl.to(targetBefore, 
@@ -95,11 +98,9 @@ $("#section-b").each(function (index) {
         { opacity: 0, duration: 0.2 },
         0);
     // textActive #indicator-text-b
-    onEnter: () => {
     tl.to(textActive,
         { opacity: 1, duration: 0.2 },
         0);
-    }
     // textAfter #indicator-text-c
     tl.to(textAfter,
         { opacity: 0, duration: 0.2 },
