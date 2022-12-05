@@ -106,7 +106,7 @@ $("#section-b").each(function (index) {
     // set timeout of 4 second for textActive #indicator-text-b
     tl.to(textActive,
         { opacity: 0, duration: 0.2 },
-        4);
+        20);
 });
 
 // Section 3 #section-c
