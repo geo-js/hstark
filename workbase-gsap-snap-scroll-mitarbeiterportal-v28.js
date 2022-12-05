@@ -336,7 +336,7 @@ $("#section-h").each(function (index) {
         0);
     // textActive #indicator-text-h
     tl.to(textActive,
-        { opacity: 1, duration: 0.2 },
+        { opacity: 1, color: "#ffffff", duration: 0.2 },
         0);
 });
 
