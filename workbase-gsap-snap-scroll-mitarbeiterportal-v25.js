@@ -75,7 +75,7 @@ $("#section-b").each(function (index) {
     let textAfter = $("#indicator-text-c");
 
     let tl = gsap.timeline({
-        scrollTrigger: { trigger: triggerElement, start: "top top", end: "bottom bottom", scrub: 1 }
+        scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: false }
     });
     // targetBefore #indicator-a
     tl.to(targetBefore, 
@@ -102,11 +102,6 @@ $("#section-b").each(function (index) {
     tl.to(textAfter,
         { opacity: 0, duration: 0.2 },
         0);
-
-    // set timeout of 4 second for textActive #indicator-text-b
-    tl.fromTo(textActive,
-        { opacity: 1 }, { opacity: 0, duration: 0.2 },
-        20);
 });
 
 // Section 3 #section-c
