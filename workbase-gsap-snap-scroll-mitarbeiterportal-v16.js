@@ -33,6 +33,7 @@ $("#section-b").each(function (index) {
 // Section 1 #section-a
 $("#section-a").each(function (index) {
     let triggerElement = $(this);
+
     let targetActive = $("#indicator-a");
     let targetAfter = $("#indicator-b");
 
@@ -54,11 +55,11 @@ $("#section-a").each(function (index) {
 
     // textActive #indicator-text-a
     tl.to(textActive,
-        { opacity: 1, duration: 0 },
+        { opacity: 1, duration: 0.2 },
         0);
     // textAfter #indicator-text-b
     tl.to(textAfter,
-        { opacity: 0, duration: 0 },
+        { opacity: 0, duration: 0.2 },
         0);
 });
 
@@ -91,15 +92,15 @@ $("#section-b").each(function (index) {
     
     // textBefore #indicator-text-a
     tl.to(textBefore,
-        { opacity: 0, duration: 0 },
+        { opacity: 0, duration: 0.2 },
         0);
     // textActive #indicator-text-b
     tl.to(textActive,
-        { opacity: 1, duration: 0 },
+        { opacity: 1, duration: 0.2 },
         0);
     // textAfter #indicator-text-c
     tl.to(textAfter,
-        { opacity: 0, duration: 0 },
+        { opacity: 0, duration: 0.2 },
         0);
 });
 
@@ -132,15 +133,15 @@ $("#section-c").each(function (index) {
 
     // textBefore #indicator-text-b
     tl.to(textBefore,
-        { opacity: 0, duration: 0 },
+        { opacity: 0, duration: 0.2 },
         0);
     // textActive #indicator-text-c
     tl.to(textActive,
-        { opacity: 1, duration: 0 },
+        { opacity: 1, duration: 0.2 },
         0);
     // textAfter #indicator-text-d
     tl.to(textAfter,
-        { opacity: 0, duration: 0 },
+        { opacity: 0, duration: 0.2 },
         0);
 });
 
@@ -173,15 +174,15 @@ $("#section-d").each(function (index) {
 
     // textBefore #indicator-text-c
     tl.to(textBefore,
-        { opacity: 0, duration: 0 },
+        { opacity: 0, duration: 0.2 },
         0);
     // textActive #indicator-text-d
     tl.to(textActive,
-        { opacity: 1, duration: 0 },
+        { opacity: 1, duration: 0.2 },
         0);
     // textAfter #indicator-text-e
     tl.to(textAfter,
-        { opacity: 0, duration: 0 },
+        { opacity: 0, duration: 0.2 },
         0);
 });
 
@@ -214,15 +215,15 @@ $("#section-e").each(function (index) {
     
     // textBefore #indicator-text-d
     tl.to(textBefore,
-        { opacity: 0, duration: 0 },
+        { opacity: 0, duration: 0.2 },
         0);
     // textActive #indicator-text-e
     tl.to(textActive,
-        { opacity: 1, duration: 0 },
+        { opacity: 1, duration: 0.2 },
         0);
     // textAfter #indicator-text-f
     tl.to(textAfter,
-        { opacity: 0, duration: 0 },
+        { opacity: 0, duration: 0.2 },
         0);
 });
 
@@ -255,15 +256,15 @@ $("#section-f").each(function (index) {
 
     // textBefore #indicator-text-e
     tl.to(textBefore,
-        { opacity: 0, duration: 0 },
+        { opacity: 0, duration: 0.2 },
         0);
     // textActive #indicator-text-f
     tl.to(textActive,
-        { opacity: 1, duration: 0 },
+        { opacity: 1, duration: 0.2 },
         0);
     // textAfter #indicator-text-g
     tl.to(textAfter,
-        { opacity: 0, duration: 0 },
+        { opacity: 0, duration: 0.2 },
         0);
 });
 
@@ -296,15 +297,15 @@ $("#section-g").each(function (index) {
 
     // textBefore #indicator-text-f
     tl.to(textBefore,
-        { opacity: 0, duration: 0 },
+        { opacity: 0, duration: 0.2 },
         0);
     // textActive #indicator-text-g
     tl.to(textActive,
-        { opacity: 1, duration: 0 },
+        { opacity: 1, duration: 0.2 },
         0);
     // textAfter #indicator-text-h
     tl.to(textAfter,
-        { opacity: 0, duration: 0 },
+        { opacity: 0, duration: 0.2 },
         0);
 });
 
@@ -331,11 +332,11 @@ $("#section-h").each(function (index) {
 
     // textBefore #indicator-text-g
     tl.to(textBefore,
-        { opacity: 0, duration: 0 },
+        { opacity: 0, duration: 0.2 },
         0);
     // textActive #indicator-text-h
     tl.to(textActive,
-        { opacity: 1, duration: 0 },
+        { opacity: 1, duration: 0.2 },
         0);
 });
 
