@@ -17,7 +17,7 @@ $("#section-b").each(function (index) {
             // trigger element - viewport
             start: "top center",
             end: "bottom bottom",
-            scrub: 1
+            scrub: 0
         }
     });
     tl.fromTo(targetElement1, 
@@ -196,7 +196,7 @@ $("#section-e").each(function (index) {
     let textAfter = $("#indicator-text-f");
 
     let tl = gsap.timeline({
-        scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 1}
+        scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 0 }
     });
     // targetBefore #indicator-d
     tl.to(targetBefore, 
@@ -236,7 +236,7 @@ $("#section-f").each(function (index) {
     let textAfter = $("#indicator-text-g");
 
     let tl = gsap.timeline({
-        scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 1}
+        scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 0 }
     });
     // targetBefore #indicator-e
     tl.to(targetBefore, 
@@ -276,7 +276,7 @@ $("#section-g").each(function (index) {
     let textAfter = $("#indicator-text-h");
 
     let tl = gsap.timeline({
-        scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 1}
+        scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 0 }
     });
     // targetBefore #indicator-f
     tl.to(targetBefore, 
@@ -314,7 +314,7 @@ $("#section-h").each(function (index) {
     let textActive = $("#indicator-text-h");
 
     let tl = gsap.timeline({
-        scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 1}
+        scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 0 }
     });
     // targetBefore #indicator-g
     tl.to(targetBefore, 
@@ -346,7 +346,7 @@ $("#section-h").each(function (index) {
             // trigger element - viewport
             start: "top top",
             end: "bottom bottom",
-            scrub: 1
+            scrub: 0
         }
     });
     // 0 at end equals offset of 0 seconds, so it starts with the first timeline elemenet (targetElement1) 
