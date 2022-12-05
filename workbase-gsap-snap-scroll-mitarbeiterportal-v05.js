@@ -50,10 +50,13 @@ $("#section-a").each(function (index) {
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
 
-    // activeText #indicator-a-text
+    // activeText #indicator-a-text show for 3 seconds and then hide again 
     tl.to(activeText,
-        { display: "block", duration: 0.2 },
+        { opacity: 1, duration: 0.2 },
         0);
+    tl.to(activeText,
+        { opacity: 0, duration: 0.2 },
+        3);
 });
 
 // Section 2 #section-b
