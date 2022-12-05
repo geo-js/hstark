@@ -55,11 +55,9 @@ $("#section-a").each(function (index) {
         { opacity: 1, duration: 0.2 },
         0);
     // set timeout to hide activeText
-    setTimeout(function () {
-        tl.to(activeText,
+    tl.to(activeText,
         { opacity: 0, duration: 0.2 },
-        0);
-    }, 3000);
+        6);
 
 });
 
