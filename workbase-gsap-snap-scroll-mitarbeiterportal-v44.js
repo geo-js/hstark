@@ -216,6 +216,8 @@ $("#section-e").each(function (index) {
     let textActive = $("#indicator-text-e");
     let textAfter = $("#indicator-text-f");
 
+    let scrollUpIcon = $(".scrollup-icon");
+
     let tl = gsap.timeline({
         scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 0 }
     });
@@ -242,6 +244,11 @@ $("#section-e").each(function (index) {
         0);
     tl.to(textAfter,
         { className: "scroll-indicator-title-wrapper", duration: 0.2 },
+        0);
+
+    // change color of scrollUpIcon
+    tl.to(scrollUpIcon,
+        { color: "rgba(59, 69, 85, 1)", duration: 0.2 },
         0);
 });
 
@@ -334,6 +341,8 @@ $("#section-h").each(function (index) {
     let textBefore = $("#indicator-text-g");
     let textActive = $("#indicator-text-h");
 
+    let scrollUpIcon = $(".scrollup-icon");
+
     let tl = gsap.timeline({
         scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 0 }
     });
@@ -353,6 +362,11 @@ $("#section-h").each(function (index) {
     // toggle class is-active to textActive
     tl.to(textActive,
         { className: "scroll-indicator-title-wrapper is-active", duration: 0.2 },
+        0);
+    
+    // change color of scrollUpIcon
+    tl.to(scrollUpIcon,
+        { color: "rgba(255, 255, 255, 1)", duration: 0.2 },
         0);
 });
 
