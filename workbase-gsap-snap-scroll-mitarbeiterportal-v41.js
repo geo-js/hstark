@@ -74,6 +74,8 @@ $("#section-b").each(function (index) {
     let textActive = $("#indicator-text-b");
     let textAfter = $("#indicator-text-c");
 
+    let navBar = $(".navbar_component-new");
+
     let tl = gsap.timeline({
         scrollTrigger: { trigger: triggerElement, start: "top center", end: "center center", scrub: 0 }
     });
@@ -101,6 +103,11 @@ $("#section-b").each(function (index) {
         0);
     tl.to(textAfter,
         { className: "scroll-indicator-title-wrapper", duration: 0.2 },
+        0);
+
+    // toggle class is-outviewport to navBar
+    tl.to(navBar,
+        { className: "navbar_component-new is-outviewport", duration: 0.2 },
         0);
 });
 
