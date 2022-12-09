@@ -348,7 +348,7 @@ $("#section-h").each(function (index) {
         onComplete: function () {
             // remove class is-active is-white from textActive
             tl.to(textActive,
-                { className: "scroll-indicator-title-wrapper is-active", duration: 0.05 },
+                { className: "scroll-indicator-title-wrapper", delay: 4 },
                 0);
         }
     });
