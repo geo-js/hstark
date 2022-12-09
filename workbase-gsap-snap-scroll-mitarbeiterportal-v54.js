@@ -344,13 +344,7 @@ $("#section-h").each(function (index) {
     let scrollUpIcon = $(".scrollup-icon");
 
     let tl = gsap.timeline({
-        scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 0 },
-        onComplete: function () {
-            // remove class is-active is-white from textActive
-            tl.to(textActive,
-                { className: "scroll-indicator-title-wrapper", delay: 4 },
-                0);
-        }
+        scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 0 }
     });
     // targetBefore #indicator-g
     tl.to(targetBefore, 
