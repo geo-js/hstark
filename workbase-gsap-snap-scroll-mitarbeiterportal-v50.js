@@ -370,7 +370,7 @@ $("#section-h").each(function (index) {
         0);
     
     tl.to(textActive,
-        { className: "scroll-indicator-title-wrapper", duration: 0.05 },
+        { className: "scroll-indicator-title-wrapper", duration: 2 },
         5);
 });
 
