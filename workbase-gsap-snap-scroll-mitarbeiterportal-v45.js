@@ -193,7 +193,7 @@ $("#section-d").each(function (index) {
         0);
     // toggle class is-active to textActive
     tl.to(textActive,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper is-active is-white", duration: 0.2 },
         0);
     tl.to(textAfter,
         { className: "scroll-indicator-title-wrapper", duration: 0.2 },
@@ -361,7 +361,7 @@ $("#section-h").each(function (index) {
         0);
     // toggle class is-active to textActive
     tl.to(textActive,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper is-active is-white", duration: 0.2 },
         0);
     
     // change color of scrollUpIcon
