@@ -368,6 +368,10 @@ $("#section-h").each(function (index) {
     tl.to(scrollUpIcon,
         { color: "rgba(255, 255, 255, 1)", duration: 0.2 },
         0);
+    
+    tl.to(textActive,
+        { className: "scroll-indicator-title-wrapper", duration: 0.05 },
+        5);
 });
 
 // Section Footer
