@@ -368,11 +368,23 @@ $("#section-h").each(function (index) {
     tl.to(scrollUpIcon,
         { color: "rgba(255, 255, 255, 1)", duration: 0.2 },
         0);
-    
+});
+
+// Section 8 #section-h hide title 
+$("#section-h").each(function (index) {
+    let triggerElement = $(this);
+    let textActive = $("#indicator-text-h");
+
+    let tl = gsap.timeline({
+        scrollTrigger: { trigger: triggerElement, start: "top top", end: "bottom bottom", scrub: 0 }
+    });
+
     tl.to(textActive,
-        { className: "scroll-indicator-title-wrapper", duration: 2 },
+        { className: "scroll-indicator-title-wrapper", delay: 4 },
         5);
 });
+
+
 
 // Section Footer
 $("#section-h").each(function (index) {
