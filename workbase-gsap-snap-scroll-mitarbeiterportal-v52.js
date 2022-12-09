@@ -344,7 +344,13 @@ $("#section-h").each(function (index) {
     let scrollUpIcon = $(".scrollup-icon");
 
     let tl = gsap.timeline({
-        scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 0 }
+        scrollTrigger: { trigger: triggerElement, start: "top center", end: "bottom bottom", scrub: 0 },
+        onComplete: function () {
+            // remove class is-active is-white from textActive
+            tl.to(textActive,
+                { className: "scroll-indicator-title-wrapper is-active", duration: 0.05 },
+                0);
+        }
     });
     // targetBefore #indicator-g
     tl.to(targetBefore, 
@@ -368,23 +374,10 @@ $("#section-h").each(function (index) {
     tl.to(scrollUpIcon,
         { color: "rgba(255, 255, 255, 1)", duration: 0.2 },
         0);
+
+    
+
 });
-
-// Section 8 #section-h hide title 
-$("#section-h").each(function (index) {
-    let triggerElement = $(this);
-    let textActive = $("#indicator-text-h");
-
-    let tl = gsap.timeline({
-        scrollTrigger: { trigger: triggerElement, start: "top top", end: "bottom bottom", scrub: 0 }
-    });
-
-    tl.to(textActive,
-        { className: "scroll-indicator-title-wrapper", delay: 4 },
-        5);
-});
-
-
 
 // Section Footer
 $("#section-h").each(function (index) {
