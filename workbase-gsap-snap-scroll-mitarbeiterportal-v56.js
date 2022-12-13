@@ -382,12 +382,12 @@ $("#section-h").each(function (index) {
         scrollTrigger: {
             trigger: triggerElement,
             // trigger element - viewport
-            start: "top top",
+            start: "top center",
             end: "bottom bottom",
             scrub: 0
         }
     });
     // 0 at end equals offset of 0 seconds, so it starts with the first timeline elemenet (targetElement1) 
-      tl.fromTo(targetElement1, { opacity: 0, }, { opacity: 1, duration: 0.2, }, 0);
+      tl.fromTo(targetElement1, { opacity: 0, }, { opacity: 1, duration: 0.2 }, 0);
 });
 }
