@@ -388,14 +388,6 @@ $("#section-h").each(function (index) {
         }
     });
     // 0 at end equals offset of 0 seconds, so it starts with the first timeline elemenet (targetElement1) 
-      tl.fromTo(targetElement1, 
-      {
-          opacity: 0,
-      }, 
-      {
-          opacity: 1,
-          duration: 0.05
-      }, 0);
+      tl.fromTo(targetElement1, { opacity: 0, }, { opacity: 1, duration: 0.2, }, 0);
 });
-
 }
