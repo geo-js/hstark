@@ -55,10 +55,10 @@ $("#section-a").each(function (index) {
 
     // toggle class is-active to textActive
     tl.to(textActive,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper is-active", duration: 0 },
         0);
     tl.to(textAfter,
-        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0 },
         0);
 
 });
@@ -97,14 +97,14 @@ $("#section-b").each(function (index) {
     
     // toggle class is-active to textActive
     tl.to(textActive,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper is-active", duration: 0 },
         0);
     // remove class is-active from textBefore and textAfter
     tl.to(textBefore,
-        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0 },
         0);
     tl.to(textAfter,
-        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0 },
         0);
 
     // toggle class is-outviewport to navBar
@@ -147,14 +147,14 @@ $("#section-c").each(function (index) {
 
     // remove class is-active from textBefore and textAfter
     tl.to(textBefore,
-        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0 },
         0);
     // toggle class is-active to textActive
     tl.to(textActive,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper is-active", duration: 0 },
         0);
     tl.to(textAfter,
-        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0 },
         0);
 });
 
@@ -189,14 +189,14 @@ $("#section-d").each(function (index) {
 
     // remove class is-active from textBefore and textAfter
     tl.to(textBefore,
-        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0 },
         0);
     // toggle class is-active to textActive
     tl.to(textActive,
         { className: "scroll-indicator-title-wrapper is-active is-white", duration: 0 },
         0);
     tl.to(textAfter,
-        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0 },
         0);
 
     // change color of scrollUpIcon
@@ -236,14 +236,14 @@ $("#section-e").each(function (index) {
     
     // remove class is-active from textBefore and textAfter
     tl.to(textBefore,
-        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0 },
         0);
     // toggle class is-active to textActive
     tl.to(textActive,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper is-active", duration: 0 },
         0);
     tl.to(textAfter,
-        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0 },
         0);
 
     // change color of scrollUpIcon
@@ -281,14 +281,14 @@ $("#section-f").each(function (index) {
 
     // remove class is-active from textBefore and textAfter
     tl.to(textBefore,
-        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0 },
         0);
     // toggle class is-active to textActive
     tl.to(textActive,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper is-active", duration: 0 },
         0);
     tl.to(textAfter,
-        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0 },
         0);
 });
 
@@ -321,14 +321,14 @@ $("#section-g").each(function (index) {
 
     // remove class is-active from textBefore and textAfter
     tl.to(textBefore,
-        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0 },
         0);
     // toggle class is-active to textActive
     tl.to(textActive,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper is-active", duration: 0 },
         0);
     tl.to(textAfter,
-        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0 },
         0);
 });
 
@@ -357,11 +357,11 @@ $("#section-h").each(function (index) {
 
     // remove class is-active from textBefore and textAfter
     tl.to(textBefore,
-        { className: "scroll-indicator-title-wrapper", duration: 0.2 },
+        { className: "scroll-indicator-title-wrapper", duration: 0 },
         0);
     // toggle class is-active to textActive
     tl.to(textActive,
-        { className: "scroll-indicator-title-wrapper is-active is-white", duration: 0.05 },
+        { className: "scroll-indicator-title-wrapper is-active is-white", duration: 0 },
         0);
     
     // change color of scrollUpIcon
