@@ -33,7 +33,7 @@ $("#section-a").each(function (index) {
     let textActive = $("#indicator-text-a");
     let textAfter = $("#indicator-text-b");
 
-    let hoverColortexts1 = $("is-hoversidenav");
+    let hoverColortexts1 = $(".is-hoversidenav");
 
     let tl = gsap.timeline({
         scrollTrigger: { trigger: triggerElement, start: "top center", end: "top center", scrub: 0 }
@@ -56,7 +56,7 @@ $("#section-a").each(function (index) {
         { className: "scroll-indicator-title-wrapper", duration: 0.01 },
         0);
 
-    tl.to(hoverColortexts1,{ color: "#00ff00", duration: 0.01 }, 0);
+    tl.to(hoverColortexts1, { color: "#00ff00", duration: 0.01 }, 0);
     
 });
 
