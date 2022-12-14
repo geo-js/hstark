@@ -1,5 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
+gsap.defaults({ overwrite: true });
+
 ScrollTrigger.defaults({
     scroller: ".snapscroll-container",
     markers: false
