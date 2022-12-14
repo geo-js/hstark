@@ -56,7 +56,7 @@ $("#section-a").each(function (index) {
         { className: "scroll-indicator-title-wrapper", duration: 0.01 },
         0);
 
-    tl.to(hoverColortexts1, { color: "#00ff00", duration: 0.01 }, 0);
+    tl.to(hoverColortexts1, { color: "rgb(0,255,0)", duration: 0.01 }, 0);
     
 });
 
@@ -74,8 +74,7 @@ $("#section-b").each(function (index) {
     let navBar = $(".navbar_component-new");
     let scrollUp = $(".scrollup-wrapper");
 
-    let hoverColortexts1 = $(".scroll-indicator-title-wrapper.is-hover");
-    let hoverColortexts2 = $(".scroll-indicator-title-wrapper.is-white3.is-hover");
+    let hoverColortexts1 = $(".is-hoversidenav");
 
 
     let tl = gsap.timeline({
@@ -116,8 +115,7 @@ $("#section-b").each(function (index) {
         { className: "scrollup-wrapper is-active", duration: 0.2 },
         0);
     
-    tl.to(hoverColortexts1,{ color: "#00ff00", duration: 0.01 }, 0);
-    tl.to(hoverColortexts2,{ color: "#00ff00", duration: 0.01 }, 0);
+    tl.to(hoverColortexts1, { color: "rgb(0,255,0)", duration: 0.01 }, 0);
 });
 
 // Section 3 #section-c
