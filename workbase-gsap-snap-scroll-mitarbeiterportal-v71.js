@@ -87,14 +87,13 @@ $("#section-b").each(function (index) {
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
 
-    
-    // toggle class is-active to textActive
-    tl.to(textActive,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.01 },
-        0);
     // remove class is-active from textBefore and textAfter
     tl.to(textBefore,
         { className: "scroll-indicator-title-wrapper", duration: 0.01 },
+        0);
+    // toggle class is-active to textActive
+    tl.to(textActive,
+        { className: "scroll-indicator-title-wrapper is-active", duration: 0.01 },
         0);
     tl.to(textAfter,
         { className: "scroll-indicator-title-wrapper", duration: 0.01 },
