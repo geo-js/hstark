@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.defaults({ overwrite: true });
+gsap.defaults({ overwrite: auto });
 
 ScrollTrigger.defaults({
     scroller: ".snapscroll-container",
