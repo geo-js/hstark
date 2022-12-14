@@ -33,6 +33,9 @@ $("#section-a").each(function (index) {
     let textActive = $("#indicator-text-a");
     let textAfter = $("#indicator-text-b");
 
+    let hoverColortexts1 = $(".scroll-indicator-title-wrapper.is-active");
+    let hoverColortexts2 = $(".scroll-indicator-title-wrapper.is-white3.is-active");
+
     let tl = gsap.timeline({
         scrollTrigger: { trigger: triggerElement, start: "top center", end: "top center", scrub: 0 }
     });
@@ -54,6 +57,9 @@ $("#section-a").each(function (index) {
         { className: "scroll-indicator-title-wrapper", duration: 0.01 },
         0);
 
+    tl.to(hoverColortexts1,{ color: "red", duration: 0.01 }, 0);
+    tl.to(hoverColortexts2,{ color: "red", duration: 0.01 }, 0);
+    
 });
 
 // Section 2 #section-b
@@ -69,6 +75,9 @@ $("#section-b").each(function (index) {
 
     let navBar = $(".navbar_component-new");
     let scrollUp = $(".scrollup-wrapper");
+
+    let hoverColortexts1 = $(".scroll-indicator-title-wrapper.is-active");
+    let hoverColortexts2 = $(".scroll-indicator-title-wrapper.is-white3.is-active");
 
 
     let tl = gsap.timeline({
@@ -108,6 +117,9 @@ $("#section-b").each(function (index) {
     tl.to(scrollUp,
         { className: "scrollup-wrapper is-active", duration: 0.2 },
         0);
+    
+    tl.to(hoverColortexts1,{ color: "red", duration: 0.01 }, 0);
+    tl.to(hoverColortexts2,{ color: "red", duration: 0.01 }, 0);
 });
 
 // Section 3 #section-c
@@ -120,6 +132,9 @@ $("#section-c").each(function (index) {
     let textBefore = $("#indicator-text-b");
     let textActive = $("#indicator-text-c");
     let textAfter = $("#indicator-text-d");
+
+    let hoverColortexts1 = $(".scroll-indicator-title-wrapper.is-active");
+    let hoverColortexts2 = $(".scroll-indicator-title-wrapper.is-white3.is-active");
 
     let tl = gsap.timeline({
         scrollTrigger: { trigger: triggerElement, start: "top center", end: "top center", scrub: 0 }
@@ -148,6 +163,9 @@ $("#section-c").each(function (index) {
     tl.to(textAfter,
         { className: "scroll-indicator-title-wrapper is-white3", duration: 0.01 },
         0);
+
+    tl.to(hoverColortexts1,{ color: "red", duration: 0.01 }, 0);
+    tl.to(hoverColortexts2,{ color: "red", duration: 0.01 }, 0);
 });
 
 // Section 4 #section-d
@@ -162,6 +180,9 @@ $("#section-d").each(function (index) {
     let textAfter = $("#indicator-text-e");
 
     let scrollUpIcon = $(".scrollup-icon");
+
+    let hoverColortexts1 = $(".scroll-indicator-title-wrapper.is-active");
+    let hoverColortexts2 = $(".scroll-indicator-title-wrapper.is-white3.is-active");
 
     let tl = gsap.timeline({
         scrollTrigger: { trigger: triggerElement, start: "top center", end: "top center", scrub: 0 }
@@ -195,6 +216,9 @@ $("#section-d").each(function (index) {
     tl.to(scrollUpIcon,
         { color: "rgba(255, 255, 255, 1)", duration: 0.2 },
         0);
+
+    tl.to(hoverColortexts1,{ color: "green", duration: 0.01 }, 0);
+    tl.to(hoverColortexts2,{ color: "green", duration: 0.01 }, 0);
 });
 
 // Section 5 #section-e
