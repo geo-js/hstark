@@ -69,8 +69,8 @@ $('.tes-global-english').click(function() {
 	$('.is-language-switch-cb').text('Global - English');
 
     // tes menu text change
-    $('.nav-tes-trigger-active-country').text('Global TEST');
-    $('.nav-tes-trigger-active-lang').text('Global English TEST');
+    $('.nav-tes-trigger-active-country').text('Global');
+    $('.nav-tes-trigger-active-lang').text('English');
 
 	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
@@ -126,8 +126,8 @@ $('.tes-us-native').click(function() {
 	$('.is-language-switch-cb').text('United States - English');
 
     // tes menu text change
-    $('.nav-tes-trigger-active-country').text('United States TEST');
-    $('.nav-tes-trigger-active-lang').text('United States English TEST');
+    $('.nav-tes-trigger-active-country').text('United States');
+    $('.nav-tes-trigger-active-lang').text('English');
 
 	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
@@ -183,8 +183,8 @@ $('.tes-de-english').click(function() {
 	$('.is-language-switch-cb').text('Deutschland - English');
 
     // tes menu text change
-    $('.nav-tes-trigger-active-country').text('Deutschland TEST');
-    $('.nav-tes-trigger-active-lang').text('Deutschland English TEST');
+    $('.nav-tes-trigger-active-country').text('Deutschland');
+    $('.nav-tes-trigger-active-lang').text('English');
 
 	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
@@ -240,8 +240,8 @@ $('.tes-at-english').click(function() {
 	$('.is-language-switch-cb').text('Österreich - English');
 
     // tes menu text change
-    $('.nav-tes-trigger-active-country').text('Österreich TEST');
-    $('.nav-tes-trigger-active-lang').text('Österreich English TEST');
+    $('.nav-tes-trigger-active-country').text('Österreich');
+    $('.nav-tes-trigger-active-lang').text('English');
 
 	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
@@ -297,8 +297,8 @@ $('.tes-ch-english').click(function() {
 	$('.is-language-switch-cb').text('Schweiz - English');
 
     // tes menu text change
-    $('.nav-tes-trigger-active-country').text('Schweiz TEST');
-    $('.nav-tes-trigger-active-lang').text('Schweiz English TEST');
+    $('.nav-tes-trigger-active-country').text('Schweiz');
+    $('.nav-tes-trigger-active-lang').text('English');
 
 	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
@@ -354,8 +354,8 @@ $('.tes-de-native').click(function() {
 	$('.is-language-switch-cb').text('Deutschland - Deutsch');
 
     // tes menu text change
-    $('.nav-tes-trigger-active-country').text('Deutschland TEST');
-    $('.nav-tes-trigger-active-lang').text('Deutschland Deutsch TEST');
+    $('.nav-tes-trigger-active-country').text('Deutschland');
+    $('.nav-tes-trigger-active-lang').text('Deutsch');
 
 	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
@@ -411,8 +411,8 @@ $('.tes-at-native').click(function() {
 	$('.is-language-switch-cb').text('Österreich - Deutsch');
 
     // tes menu text change
-    $('.nav-tes-trigger-active-country').text('Österreich TEST');
-    $('.nav-tes-trigger-active-lang').text('Österreich Deutsch TEST');
+    $('.nav-tes-trigger-active-country').text('Österreich');
+    $('.nav-tes-trigger-active-lang').text('Deutsch');
 
 	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
@@ -468,8 +468,8 @@ $('.tes-ch-native').click(function() {
 	$('.is-language-switch-cb').text('Schweiz - Deutsch');
 
     // tes menu text change
-    $('.nav-tes-trigger-active-country').text('Schweiz TEST');
-    $('.nav-tes-trigger-active-lang').text('Schweiz Deutsch TEST');
+    $('.nav-tes-trigger-active-country').text('Schweiz');
+    $('.nav-tes-trigger-active-lang').text('Deutsch');
 
 	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
@@ -534,8 +534,8 @@ $('.english-global-lang-switcher').click(function() {
 	$('.is-language-switch-cb').text('Global - English');
 
     // tes menu text change
-    $('.nav-tes-trigger-active-country').text('Global TEST');
-    $('.nav-tes-trigger-active-lang').text('Global English TEST');
+    $('.nav-tes-trigger-active-country').text('Global');
+    $('.nav-tes-trigger-active-lang').text('English');
 
 	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
@@ -591,8 +591,8 @@ $('.english-us-lang-switcher').click(function() {
 	$('.is-language-switch-cb').text('United States - English');
 
     // tes menu text change
-    $('.nav-tes-trigger-active-country').text('United States TEST');
-    $('.nav-tes-trigger-active-lang').text('United States English TEST');
+    $('.nav-tes-trigger-active-country').text('United States');
+    $('.nav-tes-trigger-active-lang').text('English');
 
 	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
@@ -648,8 +648,8 @@ $('.english-de-lang-switcher').click(function() {
 	$('.is-language-switch-cb').text('Deutschland - English');
 
     // tes menu text change
-    $('.nav-tes-trigger-active-country').text('Deutschland TEST');
-    $('.nav-tes-trigger-active-lang').text('Deutschland English TEST');
+    $('.nav-tes-trigger-active-country').text('Deutschland');
+    $('.nav-tes-trigger-active-lang').text('English');
 
 	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
@@ -705,8 +705,8 @@ $('.english-at-lang-switcher').click(function() {
 	$('.is-language-switch-cb').text('Österreich - English');
 
     // tes menu text change
-    $('.nav-tes-trigger-active-country').text('Österreich TEST');
-    $('.nav-tes-trigger-active-lang').text('Österreich English TEST');
+    $('.nav-tes-trigger-active-country').text('Österreich');
+    $('.nav-tes-trigger-active-lang').text('English');
 
 	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
@@ -762,8 +762,8 @@ $('.english-ch-lang-switcher').click(function() {
 	$('.is-language-switch-cb').text('Schweiz - English');
 
     // tes menu text change
-    $('.nav-tes-trigger-active-country').text('Schweiz TEST');
-    $('.nav-tes-trigger-active-lang').text('Schweiz English TEST');
+    $('.nav-tes-trigger-active-country').text('Schweiz');
+    $('.nav-tes-trigger-active-lang').text('English');
 
 	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
@@ -819,8 +819,8 @@ $('.native-lang-de').click(function() {
 	$('.is-language-switch-cb').text('Deutschland - Deutsch');
 
     // tes menu text change
-    $('.nav-tes-trigger-active-country').text('Deutschland TEST');
-    $('.nav-tes-trigger-active-lang').text('Deutschland Deutsch TEST');
+    $('.nav-tes-trigger-active-country').text('Deutschland');
+    $('.nav-tes-trigger-active-lang').text('Deutsch');
 
 	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
@@ -876,8 +876,8 @@ $('.native-lang-at').click(function() {
 	$('.is-language-switch-cb').text('Österreich - Deutsch');
 
     // tes menu text change
-    $('.nav-tes-trigger-active-country').text('Österreich TEST');
-    $('.nav-tes-trigger-active-lang').text('Österreich Deutsch TEST');
+    $('.nav-tes-trigger-active-country').text('Österreich');
+    $('.nav-tes-trigger-active-lang').text('Deutsch');
 
 	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
@@ -933,8 +933,8 @@ $('.native-lang-ch').click(function() {
 	$('.is-language-switch-cb').text('Schweiz - Deutsch');
 
     // tes menu text change
-    $('.nav-tes-trigger-active-country').text('Schweiz TEST');
-    $('.nav-tes-trigger-active-lang').text('Schweiz Deutsch TEST');
+    $('.nav-tes-trigger-active-country').text('Schweiz');
+    $('.nav-tes-trigger-active-lang').text('Deutsch');
 
 	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
@@ -991,8 +991,8 @@ $('.country-de').click(function() {
 	$('.is-language-switch-cb').text('Deutschland - Deutsch');
 
     // tes menu text change
-    $('.nav-tes-trigger-active-country').text('Deutschland TEST');
-    $('.nav-tes-trigger-active-lang').text('Deutschland Deutsch TEST');
+    $('.nav-tes-trigger-active-country').text('Deutschland');
+    $('.nav-tes-trigger-active-lang').text('Deutsch');
 
 	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
@@ -1049,8 +1049,8 @@ $('.country-at').click(function() {
 	$('.is-language-switch-cb').text('Österreich - Deutsch');
 
     // tes menu text change
-    $('.nav-tes-trigger-active-country').text('Österreich TEST');
-    $('.nav-tes-trigger-active-lang').text('Österreich Deutsch TEST');
+    $('.nav-tes-trigger-active-country').text('Österreich');
+    $('.nav-tes-trigger-active-lang').text('Deutsch');
 
 	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
@@ -1106,8 +1106,8 @@ $('.country-ch').click(function() {
 	$('.is-language-switch-cb').text('Schweiz - Deutsch');
 
     // tes menu text change
-    $('.nav-tes-trigger-active-country').text('Schweiz TEST');
-    $('.nav-tes-trigger-active-lang').text('Schweiz Deutsch TEST');
+    $('.nav-tes-trigger-active-country').text('Schweiz');
+    $('.nav-tes-trigger-active-lang').text('Deutsch');
 
 	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
@@ -1163,8 +1163,8 @@ $('.country-us').click(function() {
 	$('.is-language-switch-cb').text('United States - English');
 
     // tes menu text change
-    $('.nav-tes-trigger-active-country').text('United States TEST');
-    $('.nav-tes-trigger-active-lang').text('United States English TEST');
+    $('.nav-tes-trigger-active-country').text('United States');
+    $('.nav-tes-trigger-active-lang').text('English');
 
 	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
@@ -1220,8 +1220,8 @@ $('.country-global').click(function() {
 	$('.is-language-switch-cb').text('Global - English');
 
     // tes menu text change
-    $('.nav-tes-trigger-active-country').text('Global TEST');
-    $('.nav-tes-trigger-active-lang').text('Global English TEST');
+    $('.nav-tes-trigger-active-country').text('Global');
+    $('.nav-tes-trigger-active-lang').text('English');
 
 	// flags in footer
 	$('.footer_language-icon').removeClass('is-active');
@@ -1283,8 +1283,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.is-language-switch-cb').text('Deutschland - Deutsch');
 
         // tes menu text change
-		$('.nav-tes-trigger-active-country').text('Deutschland TEST');
-		$('.nav-tes-trigger-active-lang').text('Deutschland Deutsch TEST');
+		$('.nav-tes-trigger-active-country').text('Deutschland');
+		$('.nav-tes-trigger-active-lang').text('Deutsch');
 
 		$('.country-item').removeClass('is-active');
 		$('.country-de').addClass('is-active');
@@ -1327,8 +1327,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.is-language-switch-cb').text('Deutschland - Deutsch');
 
         // tes menu text change
-		$('.nav-tes-trigger-active-country').text('Deutschland TEST');
-		$('.nav-tes-trigger-active-lang').text('Deutschland Deutsch TEST');
+		$('.nav-tes-trigger-active-country').text('Deutschland');
+		$('.nav-tes-trigger-active-lang').text('Deutsch');
 
 		$('.country-item').removeClass('is-active');
 		$('.country-de').addClass('is-active');
@@ -1373,8 +1373,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.is-language-switch-cb').text('Deutschland - English');
 
         // tes menu text change
-		$('.nav-tes-trigger-active-country').text('Deutschland TEST');
-		$('.nav-tes-trigger-active-lang').text('Deutschland English TEST');
+		$('.nav-tes-trigger-active-country').text('Deutschland');
+		$('.nav-tes-trigger-active-lang').text('English');
 
 		$('.country-item').removeClass('is-active');
 		$('.country-de').addClass('is-active');
@@ -1417,8 +1417,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.is-language-switch-cb').text('Deutschland - Deutsch');
 
         // tes menu text change
-		$('.nav-tes-trigger-active-country').text('Deutschland TEST');
-		$('.nav-tes-trigger-active-lang').text('Deutschland Deutsch TEST');
+		$('.nav-tes-trigger-active-country').text('Deutschland');
+		$('.nav-tes-trigger-active-lang').text('Deutsch');
 
 		$('.country-item').removeClass('is-active');
 		$('.country-de').addClass('is-active');
@@ -1461,8 +1461,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.is-language-switch-cb').text('Österreich - Deutsch');
 
         // tes menu text change
-		$('.nav-tes-trigger-active-country').text('Österreich TEST');
-		$('.nav-tes-trigger-active-lang').text('Österreich Deutsch TEST');
+		$('.nav-tes-trigger-active-country').text('Österreich');
+		$('.nav-tes-trigger-active-lang').text('Deutsch');
 
 		$('.country-item').removeClass('is-active');
 		$('.country-at').addClass('is-active');
@@ -1504,8 +1504,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.is-language-switch-cb').text('Österreich - Deutsch');
 
         // tes menu text change
-		$('.nav-tes-trigger-active-country').text('Österreich TEST');
-		$('.nav-tes-trigger-active-lang').text('Österreich Deutsch TEST');
+		$('.nav-tes-trigger-active-country').text('Österreich');
+		$('.nav-tes-trigger-active-lang').text('Deutsch');
 
 		$('.country-item').removeClass('is-active');
 		$('.country-at').addClass('is-active');
@@ -1548,8 +1548,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.is-language-switch-cb').text('Österreich - English');
 
         // tes menu text change
-		$('.nav-tes-trigger-active-country').text('Österreich TEST');
-		$('.nav-tes-trigger-active-lang').text('Österreich English TEST');
+		$('.nav-tes-trigger-active-country').text('Österreich');
+		$('.nav-tes-trigger-active-lang').text('English');
 
 		$('.country-item').removeClass('is-active');
 		$('.country-at').addClass('is-active');
@@ -1591,8 +1591,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.is-language-switch-cb').text('Österreich - Deutsch');
 
         // tes menu text change
-		$('.nav-tes-trigger-active-country').text('Österreich TEST');
-		$('.nav-tes-trigger-active-lang').text('Österreich Deutsch TEST');
+		$('.nav-tes-trigger-active-country').text('Österreich');
+		$('.nav-tes-trigger-active-lang').text('Deutsch');
 
 		$('.country-item').removeClass('is-active');
 		$('.country-at').addClass('is-active');
@@ -1635,8 +1635,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.is-language-switch-cb').text('Schweiz - Deutsch');
 
         // tes menu text change
-		$('.nav-tes-trigger-active-country').text('Schweiz TEST');
-		$('.nav-tes-trigger-active-lang').text('Schweiz Deutsch TEST');
+		$('.nav-tes-trigger-active-country').text('Schweiz');
+		$('.nav-tes-trigger-active-lang').text('Deutsch');
 
 		$('.country-item').removeClass('is-active');
 		$('.country-ch').addClass('is-active');
@@ -1679,8 +1679,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.is-language-switch-cb').text('Schweiz - Deutsch');
 
         // tes menu text change
-		$('.nav-tes-trigger-active-country').text('Schweiz TEST');
-		$('.nav-tes-trigger-active-lang').text('Schweiz Deutsch TEST');
+		$('.nav-tes-trigger-active-country').text('Schweiz');
+		$('.nav-tes-trigger-active-lang').text('Deutsch');
 
 		$('.country-item').removeClass('is-active');
 		$('.country-ch').addClass('is-active');
@@ -1724,8 +1724,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.is-language-switch-cb').text('Schweiz - English');
 
         // tes menu text change
-		$('.nav-tes-trigger-active-country').text('Schweiz TEST');
-		$('.nav-tes-trigger-active-lang').text('Schweiz English TEST');
+		$('.nav-tes-trigger-active-country').text('Schweiz');
+		$('.nav-tes-trigger-active-lang').text('English');
 
 		$('.country-item').removeClass('is-active');
 		$('.country-ch').addClass('is-active');
@@ -1767,8 +1767,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.is-language-switch-cb').text('Schweiz - Deutsch');
 
         // tes menu text change
-		$('.nav-tes-trigger-active-country').text('Schweiz TEST');
-		$('.nav-tes-trigger-active-lang').text('Schweiz Deutsch TEST');
+		$('.nav-tes-trigger-active-country').text('Schweiz');
+		$('.nav-tes-trigger-active-lang').text('Deutsch');
 
 		$('.country-item').removeClass('is-active');
 		$('.country-ch').addClass('is-active');
@@ -1811,8 +1811,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.is-language-switch-cb').text('United States - English');
 
         // tes menu text change
-		$('.nav-tes-trigger-active-country').text('United States TEST');
-		$('.nav-tes-trigger-active-lang').text('United States English TEST');
+		$('.nav-tes-trigger-active-country').text('United States');
+		$('.nav-tes-trigger-active-lang').text('English');
 
 		$('.country-item').removeClass('is-active');
 		$('.country-us').addClass('is-active');
@@ -1855,8 +1855,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.is-language-switch-cb').text('United States - English');
 
         // tes menu text change
-		$('.nav-tes-trigger-active-country').text('United States TEST');
-		$('.nav-tes-trigger-active-lang').text('United States English TEST');
+		$('.nav-tes-trigger-active-country').text('United States');
+		$('.nav-tes-trigger-active-lang').text('English');
 
 		$('.country-item').removeClass('is-active');
 		$('.country-us').addClass('is-active');
@@ -1898,8 +1898,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.is-language-switch-cb').text('United States - English');
 
         // tes menu text change
-		$('.nav-tes-trigger-active-country').text('United States TEST');
-		$('.nav-tes-trigger-active-lang').text('United States English TEST');
+		$('.nav-tes-trigger-active-country').text('United States');
+		$('.nav-tes-trigger-active-lang').text('English');
 
 		$('.country-item').removeClass('is-active');
 		$('.country-us').addClass('is-active');
@@ -1943,8 +1943,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.is-language-switch-cb').text('Global - English');
 
         // tes menu text change
-		$('.nav-tes-trigger-active-country').text('Global TEST');
-		$('.nav-tes-trigger-active-lang').text('Global English TEST');
+		$('.nav-tes-trigger-active-country').text('Global');
+		$('.nav-tes-trigger-active-lang').text('English');
 
 		$('.country-item').removeClass('is-active');
 		$('.country-global').addClass('is-active');
@@ -1987,8 +1987,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.is-language-switch-cb').text('Global - English');
 
         // tes menu text change
-		$('.nav-tes-trigger-active-country').text('Global TEST');
-		$('.nav-tes-trigger-active-lang').text('Global English TEST');
+		$('.nav-tes-trigger-active-country').text('Global');
+		$('.nav-tes-trigger-active-lang').text('English');
 
 		$('.country-item').removeClass('is-active');
 		$('.country-global').addClass('is-active');
@@ -2030,8 +2030,8 @@ $.get('https://ipapi.co/country_code/', function(ipapicountrycode) {
 		$('.is-language-switch-cb').text('Global - English');
 
         // tes menu text change
-		$('.nav-tes-trigger-active-country').text('Global TEST');
-		$('.nav-tes-trigger-active-lang').text('Global English TEST');
+		$('.nav-tes-trigger-active-country').text('Global');
+		$('.nav-tes-trigger-active-lang').text('English');
 		
 		$('.country-item').removeClass('is-active');
 		$('.country-global').addClass('is-active');
