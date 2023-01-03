@@ -51,7 +51,7 @@ $("#section-a").each(function (index) {
 
     //
     tl.to(textA,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.01 },
+        { className: "scroll-indicator-title-wrapper is-active", color: currentTextHover.css("color"), duration: 0.01 },
         0);
 
 });
@@ -101,7 +101,7 @@ $("#section-b").each(function (index) {
 
     //
     tl.to(textB,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.01 },
+        { className: "scroll-indicator-title-wrapper is-active", color: currentTextHover.css("color"), duration: 0.01 },
         0);
 
 });
@@ -137,7 +137,7 @@ $("#section-c").each(function (index) {
 
     //
     tl.to(textC,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.01 },
+        { className: "scroll-indicator-title-wrapper is-active", color: currentTextHover.css("color"), duration: 0.01 },
         0);
 });
 
@@ -179,7 +179,7 @@ $("#section-d").each(function (index) {
 
     //
     tl.to(textD,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.01 },
+        { className: "scroll-indicator-title-wrapper is-active", color: currentTextHover.css("color"), duration: 0.01 },
         0);
 });
 
@@ -221,7 +221,7 @@ $("#section-e").each(function (index) {
 
     //
     tl.to(textE,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.01 },
+        { className: "scroll-indicator-title-wrapper is-active", color: currentTextHover.css("color"), duration: 0.01 },
         0);
 });
 
@@ -256,7 +256,7 @@ $("#section-f").each(function (index) {
 
     //
     tl.to(textF,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.01 },
+        { className: "scroll-indicator-title-wrapper is-active", color: currentTextHover.css("color"), duration: 0.01 },
         0);
 });
 
@@ -291,7 +291,7 @@ $("#section-g").each(function (index) {
 
     //
     tl.to(textG,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.01 },
+        { className: "scroll-indicator-title-wrapper is-active", color: currentTextHover.css("color"), duration: 0.01 },
         0);
 });
 
@@ -328,7 +328,7 @@ $("#section-h").each(function (index) {
 
     //
     tl.to(textH,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.01 },
+        { className: "scroll-indicator-title-wrapper is-active", color: currentTextHover.css("color"), duration: 0.01 },
         0);
 
 });
