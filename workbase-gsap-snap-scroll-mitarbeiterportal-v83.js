@@ -30,7 +30,7 @@ $("#section-a").each(function (index) {
     let targetActive = $("#indicator-a");
     let targetAfter = $("#indicator-b");
 
-    let textA = $("#indicator-text-a");
+    let currentTextHover = $(".currentcolor");
 
     let tl = gsap.timeline({
         scrollTrigger: { trigger: triggerElement, start: "top center", end: "top center", scrub: 0 }
@@ -44,12 +44,9 @@ $("#section-a").each(function (index) {
     tl.to(targetAfter,
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
-    
-    // toggle class is-active to textActive
-    tl.to(textA,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.01 },
-        0);
-    
+        //#endregion
+    tl.to(currentTextHover, { color: "#0b1d37", duration: 0.01 }, 0);
+
 });
 
 // Section 2 #section-b
@@ -63,9 +60,6 @@ $("#section-b").each(function (index) {
     let scrollUp = $(".scrollup-wrapper");
 
     let currentTextHover = $(".currentcolor");
-
-    let textA = $("#indicator-text-a");
-    let textB = $("#indicator-text-b");
 
 
     let tl = gsap.timeline({
@@ -96,14 +90,6 @@ $("#section-b").each(function (index) {
     
     tl.to(currentTextHover, { color: "#0b1d37", duration: 0.01 }, 0);
 
-    // toggle class is-active to textActive
-    tl.to(textA,
-        { className: "scroll-indicator-title-wrapper", duration: 0.01 },
-        0);
-
-    tl.to(textB,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.01 },
-        0);
 });
 
 // Section 3 #section-c
@@ -114,10 +100,6 @@ $("#section-c").each(function (index) {
     let targetAfter = $("#indicator-d");
 
     let currentTextHover = $(".currentcolor");
-
-    let textA = $("#indicator-text-a");
-    let textB = $("#indicator-text-b");
-    let textC = $("#indicator-text-c");
 
     let tl = gsap.timeline({
         scrollTrigger: { trigger: triggerElement, start: "top center", end: "top center", scrub: 0 }
@@ -136,19 +118,6 @@ $("#section-c").each(function (index) {
         0);
 
     tl.to(currentTextHover, { color: "#0b1d37", duration: 0.01 }, 0);
-
-    // toggle class is-active to textActive
-    tl.to(textA,
-        { className: "scroll-indicator-title-wrapper", duration: 0.01 },
-        0);
-
-    tl.to(textB,
-        { className: "scroll-indicator-title-wrapper", duration: 0.01 },
-        0);
-    
-    tl.to(textC,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.01 },
-        0);
 });
 
 // Section 4 #section-d
