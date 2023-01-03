@@ -30,11 +30,6 @@ $("#section-a").each(function (index) {
     let targetActive = $("#indicator-a");
     let targetAfter = $("#indicator-b");
 
-    let textActive = $("#indicator-text-a");
-    let textAfter = $("#indicator-text-b");
-
-    let currentTextHover = $(".currentcolor");
-
     let tl = gsap.timeline({
         scrollTrigger: { trigger: triggerElement, start: "top center", end: "top center", scrub: 0 }
     });
@@ -47,16 +42,6 @@ $("#section-a").each(function (index) {
     tl.to(targetAfter,
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
-
-    // toggle class is-active to textActive
-    tl.to(textActive,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.01 },
-        0);
-    tl.to(textAfter,
-        { className: "scroll-indicator-title-wrapper", duration: 0.01 },
-        0);
-
-    tl.to(currentTextHover, { color: "#0b1d37", duration: 0.01 }, 0);
     
 });
 
@@ -66,10 +51,6 @@ $("#section-b").each(function (index) {
     let targetBefore = $("#indicator-a");
     let targetActive = $("#indicator-b");
     let targetAfter = $("#indicator-c");
-
-    let textBefore = $("#indicator-text-a");
-    let textActive = $("#indicator-text-b");
-    let textAfter = $("#indicator-text-c");
 
     let navBar = $(".navbar_component-new");
     let scrollUp = $(".scrollup-wrapper");
@@ -93,18 +74,6 @@ $("#section-b").each(function (index) {
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
 
-    // remove class is-active from textBefore and textAfter
-    tl.to(textBefore,
-        { className: "scroll-indicator-title-wrapper", duration: 0.01 },
-        0);
-    // toggle class is-active to textActive
-    tl.to(textActive,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.01 },
-        0);
-    tl.to(textAfter,
-        { className: "scroll-indicator-title-wrapper", duration: 0.01 },
-        0);
-
     // toggle class is-outviewport to navBar
     tl.to(navBar,
         { className: "navbar_component-new is-outviewport", duration: 0.2 },
@@ -125,10 +94,6 @@ $("#section-c").each(function (index) {
     let targetActive = $("#indicator-c");
     let targetAfter = $("#indicator-d");
 
-    let textBefore = $("#indicator-text-b");
-    let textActive = $("#indicator-text-c");
-    let textAfter = $("#indicator-text-d");
-
     let currentTextHover = $(".currentcolor");
 
     let tl = gsap.timeline({
@@ -147,18 +112,6 @@ $("#section-c").each(function (index) {
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
 
-    // remove class is-active from textBefore and textAfter
-    tl.to(textBefore,
-        { className: "scroll-indicator-title-wrapper", duration: 0.01 },
-        0);
-    // toggle class is-active to textActive
-    tl.to(textActive,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.01 },
-        0);
-    tl.to(textAfter,
-        { className: "scroll-indicator-title-wrapper is-white3", duration: 0.01 },
-        0);
-
     tl.to(currentTextHover, { color: "#0b1d37", duration: 0.01 }, 0);
 });
 
@@ -168,10 +121,6 @@ $("#section-d").each(function (index) {
     let targetBefore = $("#indicator-c");
     let targetActive = $("#indicator-d");
     let targetAfter = $("#indicator-e");
-
-    let textBefore = $("#indicator-text-c");
-    let textActive = $("#indicator-text-d");
-    let textAfter = $("#indicator-text-e");
 
     let scrollUpIcon = $(".scrollup-icon");
 
@@ -193,18 +142,6 @@ $("#section-d").each(function (index) {
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
 
-    // remove class is-active from textBefore and textAfter
-    tl.to(textBefore,
-        { className: "scroll-indicator-title-wrapper", duration: 0.01 },
-        0);
-    // toggle class is-active to textActive
-    tl.to(textActive,
-        { className: "scroll-indicator-title-wrapper is-white3 is-active", duration: 0.01 },
-        0);
-    tl.to(textAfter,
-        { className: "scroll-indicator-title-wrapper", duration: 0.01 },
-        0);
-
     // change color of scrollUpIcon
     tl.to(scrollUpIcon,
         { color: "rgba(255, 255, 255, 1)", duration: 0.2 },
@@ -219,10 +156,6 @@ $("#section-e").each(function (index) {
     let targetBefore = $("#indicator-d");
     let targetActive = $("#indicator-e");
     let targetAfter = $("#indicator-f");
-
-    let textBefore = $("#indicator-text-d");
-    let textActive = $("#indicator-text-e");
-    let textAfter = $("#indicator-text-f");
 
     let scrollUpIcon = $(".scrollup-icon");
 
@@ -244,18 +177,6 @@ $("#section-e").each(function (index) {
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
     
-    // remove class is-active from textBefore and textAfter
-    tl.to(textBefore,
-        { className: "scroll-indicator-title-wrapper is-white3", duration: 0.01 },
-        0);
-    // toggle class is-active to textActive
-    tl.to(textActive,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.01 },
-        0);
-    tl.to(textAfter,
-        { className: "scroll-indicator-title-wrapper", duration: 0.01 },
-        0);
-
     // change color of scrollUpIcon
     tl.to(scrollUpIcon,
         { color: "rgba(59, 69, 85, 1)", duration: 0.2 },
@@ -270,10 +191,6 @@ $("#section-f").each(function (index) {
     let targetBefore = $("#indicator-e");
     let targetActive = $("#indicator-f");
     let targetAfter = $("#indicator-g");
-
-    let textBefore = $("#indicator-text-e");
-    let textActive = $("#indicator-text-f");
-    let textAfter = $("#indicator-text-g");
 
     let currentTextHover = $(".currentcolor");
 
@@ -293,18 +210,6 @@ $("#section-f").each(function (index) {
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
 
-    // remove class is-active from textBefore and textAfter
-    tl.to(textBefore,
-        { className: "scroll-indicator-title-wrapper", duration: 0.01 },
-        0);
-    // toggle class is-active to textActive
-    tl.to(textActive,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.01 },
-        0);
-    tl.to(textAfter,
-        { className: "scroll-indicator-title-wrapper", duration: 0.01 },
-        0);
-    
     tl.to(currentTextHover, { color: "#0b1d37", duration: 0.01 }, 0);
 });
 
@@ -314,10 +219,6 @@ $("#section-g").each(function (index) {
     let targetBefore = $("#indicator-f");
     let targetActive = $("#indicator-g");
     let targetAfter = $("#indicator-h");
-
-    let textBefore = $("#indicator-text-f");
-    let textActive = $("#indicator-text-g");
-    let textAfter = $("#indicator-text-h");
 
     let currentTextHover = $(".currentcolor");
 
@@ -337,18 +238,6 @@ $("#section-g").each(function (index) {
         { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
         0);
 
-    // remove class is-active from textBefore and textAfter
-    tl.to(textBefore,
-        { className: "scroll-indicator-title-wrapper", duration: 0.01 },
-        0);
-    // toggle class is-active to textActive
-    tl.to(textActive,
-        { className: "scroll-indicator-title-wrapper is-active", duration: 0.01 },
-        0);
-    tl.to(textAfter,
-        { className: "scroll-indicator-title-wrapper is-white3", duration: 0.01 },
-        0);
-    
     tl.to(currentTextHover, { color: "#0b1d37", duration: 0.01 }, 0);
 });
 
@@ -357,9 +246,6 @@ $("#section-h").each(function (index) {
     let triggerElement = $(this);
     let targetBefore = $("#indicator-g");
     let targetActive = $("#indicator-h");
-
-    let textBefore = $("#indicator-text-g");
-    let textActive = $("#indicator-text-h");
 
     let scrollUpIcon = $(".scrollup-icon");
 
@@ -375,15 +261,6 @@ $("#section-h").each(function (index) {
     // targetActive #indicator-h
     tl.to(targetActive, 
         { backgroundColor: "rgba(255, 255, 255, 1)", width: "0.25rem", opacity: 1, duration: 0.2 }, 
-        0);
-
-    // remove class is-active from textBefore and textAfter
-    tl.to(textBefore,
-        { className: "scroll-indicator-title-wrapper", duration: 0.01 },
-        0);
-    // toggle class is-active to textActive
-    tl.to(textActive,
-        { className: "scroll-indicator-title-wrapper is-white3 is-active", duration: 0.01 },
         0);
     
     // change color of scrollUpIcon
