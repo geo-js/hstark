@@ -32,6 +32,8 @@ $("#section-a").each(function (index) {
 
     let currentTextHover = $(".currentcolor");
 
+    let textA = $("#indicator-text-a");
+
     let tl = gsap.timeline({
         scrollTrigger: { trigger: triggerElement, start: "top center", end: "top center", scrub: 0 }
     });
@@ -47,6 +49,11 @@ $("#section-a").each(function (index) {
         //#endregion
     tl.to(currentTextHover, { color: "#0b1d37", duration: 0.01 }, 0);
 
+    //
+    tl.to(textA,
+        { className: "scroll-indicator-title-wrapper is-active", duration: 0.01 },
+        0);
+
 });
 
 // Section 2 #section-b
@@ -60,6 +67,8 @@ $("#section-b").each(function (index) {
     let scrollUp = $(".scrollup-wrapper");
 
     let currentTextHover = $(".currentcolor");
+
+    let textB = $("#indicator-text-b");
 
 
     let tl = gsap.timeline({
@@ -89,6 +98,11 @@ $("#section-b").each(function (index) {
         0);
     
     tl.to(currentTextHover, { color: "#0b1d37", duration: 0.01 }, 0);
+
+    //
+    tl.to(textB,
+        { className: "scroll-indicator-title-wrapper is-active", duration: 0.01 },
+        0);
 
 });
 
