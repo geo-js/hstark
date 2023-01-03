@@ -63,7 +63,7 @@ $("#section-a").each(function (index) {
         0);
 
     tl.to(textB,
-        { className: "scroll-indicator-title-wrapper", duration: 0.01 },
+        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
         0);
 
 });
