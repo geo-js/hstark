@@ -59,7 +59,7 @@ $("#section-a").each(function (index) {
 
     //
     tl.to(textA,
-        { className: "scroll-indicator-title-wrapper is-active", color: "#0b1d37", duration: 0.01 },
+        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
         0);
 
     tl.to(textB,
@@ -114,7 +114,7 @@ $("#section-b").each(function (index) {
         0);
 
     tl.to(textB,
-        { className: "scroll-indicator-title-wrapper is-active", color: "#0b1d37", duration: 0.01 },
+        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
         0);
     
     tl.to(textC,
@@ -156,7 +156,7 @@ $("#section-c").each(function (index) {
         0);
 
     tl.to(textC,
-        { className: "scroll-indicator-title-wrapper is-active", color: "#0b1d37", duration: 0.01 },
+        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
         0);
     
     tl.to(textD,
@@ -204,7 +204,7 @@ $("#section-d").each(function (index) {
         0);
 
     tl.to(textD,
-        { className: "scroll-indicator-title-wrapper is-active", color: "#ffffff", duration: 0.01 },
+        { className: "scroll-indicator-title-wrapper", color: "#ffffff", duration: 0.01 },
         0);
     
     tl.to(textE,
@@ -252,7 +252,7 @@ $("#section-e").each(function (index) {
         0);
 
     tl.to(textE,
-        { className: "scroll-indicator-title-wrapper is-active", color: "#0b1d37", duration: 0.01 },
+        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
         0);
     
     tl.to(textF,
@@ -293,7 +293,7 @@ $("#section-f").each(function (index) {
         0);
 
     tl.to(textF,
-        { className: "scroll-indicator-title-wrapper is-active", color: "#0b1d37", duration: 0.01 },
+        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
         0);
     
     tl.to(textG,
@@ -334,7 +334,7 @@ $("#section-g").each(function (index) {
         0);
 
     tl.to(textG,
-        { className: "scroll-indicator-title-wrapper is-active", color: "#0b1d37", duration: 0.01 },
+        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
         0);
     
     tl.to(textH,
@@ -377,7 +377,7 @@ $("#section-h").each(function (index) {
         0);
 
     tl.to(textH,
-        { className: "scroll-indicator-title-wrapper is-active", color: "#ffffff", duration: 0.01 },
+        { className: "scroll-indicator-title-wrapper", color: "#ffffff", duration: 0.01 },
         0);
 });
 
