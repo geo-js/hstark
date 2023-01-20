@@ -143,7 +143,7 @@ if (window.matchMedia("(max-width: 992px)").matches) {
         
         // toggle class is-active to scrollUpTablet
         tl.to(scrollUpTablet,
-            { className: "scrollup-wrapper-tablet is-active", duration: 0.2 },
+            { className: "scrollup-wrapper-tablet", duration: 0.2 },
             0);
         
         tl.to(currentTextHover, { color: "#0b1d37", duration: 0.01 }, 0);
