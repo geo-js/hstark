@@ -93,6 +93,50 @@ if (window.matchMedia("(min-width: 992px)").matches) {
     });
 }
 
+if (window.matchMedia("(max-width: 992px)").matches) {
+    // Section 2 #section-b
+    $("#section-b").each(function (index) {
+        let triggerElement = $(this);
+        let targetBefore = $("#indicator-a");
+        let targetActive = $("#indicator-b");
+        let targetAfter = $("#indicator-c");
+
+        let navBar = $(".navbar_component-new");
+        let scrollUp = $(".scrollup-wrapper");
+
+        let currentTextHover = $(".currentcolor");
+
+        let tl = gsap.timeline({
+            scrollTrigger: { trigger: triggerElement, start: "top center", end: "top center", scrub: 0 }
+        });
+        // targetBefore #indicator-a
+        tl.to(targetBefore, 
+            { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
+            0);
+        // targetActive #indicator-b
+        tl.to(targetActive, 
+            { backgroundColor: "rgba(11, 29, 55, 1)", width: "0.25rem", opacity: 1, duration: 0.2 }, 
+            0);
+        // targetAfter #indicator-c
+        tl.to(targetAfter,
+            { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
+            0);
+
+        // toggle class is-outviewport to navBar
+        tl.to(navBar,
+            { className: "navbar_component-new", duration: 0.2 },
+            0);
+
+        // toggle class is-active to scrollUp
+        tl.to(scrollUp,
+            { className: "scrollup-wrapper is-active", duration: 0.2 },
+            0);
+        
+        tl.to(currentTextHover, { color: "#0b1d37", duration: 0.01 }, 0);
+
+    });
+}
+
 // Section 3 #section-c
 $("#section-c").each(function (index) {
     let triggerElement = $(this);
