@@ -23,15 +23,6 @@ $("#section-b").each(function (index) {
     tl.fromTo(targetElement1, { opacity: 1, }, { opacity: 0, duration: 0.1 }, 0);
 });
 
-let textA = $("#indicator-text-a");
-let textB = $("#indicator-text-b");
-let textC = $("#indicator-text-c");
-let textD = $("#indicator-text-d");
-let textE = $("#indicator-text-e");
-let textF = $("#indicator-text-f");
-let textG = $("#indicator-text-g");
-let textH = $("#indicator-text-h");
-
 
 // Section 1 #section-a
 $("#section-a").each(function (index) {
@@ -56,73 +47,51 @@ $("#section-a").each(function (index) {
         0);
         //#endregion
     tl.to(currentTextHover, { color: "#0b1d37", duration: 0.01 }, 0);
-
-    /*
-    tl.to(textA,
-        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
-        0);
-
-    tl.to(textB,
-        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
-        0);
-    */
 });
 
-// Section 2 #section-b
-$("#section-b").each(function (index) {
-    let triggerElement = $(this);
-    let targetBefore = $("#indicator-a");
-    let targetActive = $("#indicator-b");
-    let targetAfter = $("#indicator-c");
+if (window.matchMedia("(min-width: 992px)").matches) {
+    // Section 2 #section-b
+    $("#section-b").each(function (index) {
+        let triggerElement = $(this);
+        let targetBefore = $("#indicator-a");
+        let targetActive = $("#indicator-b");
+        let targetAfter = $("#indicator-c");
 
-    let navBar = $(".navbar_component-new");
-    let scrollUp = $(".scrollup-wrapper");
+        let navBar = $(".navbar_component-new");
+        let scrollUp = $(".scrollup-wrapper");
 
-    let currentTextHover = $(".currentcolor");
+        let currentTextHover = $(".currentcolor");
 
-    let tl = gsap.timeline({
-        scrollTrigger: { trigger: triggerElement, start: "top center", end: "top center", scrub: 0 }
+        let tl = gsap.timeline({
+            scrollTrigger: { trigger: triggerElement, start: "top center", end: "top center", scrub: 0 }
+        });
+        // targetBefore #indicator-a
+        tl.to(targetBefore, 
+            { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
+            0);
+        // targetActive #indicator-b
+        tl.to(targetActive, 
+            { backgroundColor: "rgba(11, 29, 55, 1)", width: "0.25rem", opacity: 1, duration: 0.2 }, 
+            0);
+        // targetAfter #indicator-c
+        tl.to(targetAfter,
+            { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
+            0);
+
+        // toggle class is-outviewport to navBar
+        tl.to(navBar,
+            { className: "navbar_component-new is-outviewport", duration: 0.2 },
+            0);
+
+        // toggle class is-active to scrollUp
+        tl.to(scrollUp,
+            { className: "scrollup-wrapper is-active", duration: 0.2 },
+            0);
+        
+        tl.to(currentTextHover, { color: "#0b1d37", duration: 0.01 }, 0);
+
     });
-    // targetBefore #indicator-a
-    tl.to(targetBefore, 
-        { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
-        0);
-    // targetActive #indicator-b
-    tl.to(targetActive, 
-        { backgroundColor: "rgba(11, 29, 55, 1)", width: "0.25rem", opacity: 1, duration: 0.2 }, 
-        0);
-    // targetAfter #indicator-c
-    tl.to(targetAfter,
-        { backgroundColor: "rgba(155, 158, 165, 1)", width: "0.125rem", opacity: 1, duration: 0.2 },
-        0);
-
-    // toggle class is-outviewport to navBar
-    tl.to(navBar,
-        { className: "navbar_component-new is-outviewport", duration: 0.2 },
-        0);
-
-    // toggle class is-active to scrollUp
-    tl.to(scrollUp,
-        { className: "scrollup-wrapper is-active", duration: 0.2 },
-        0);
-    
-    tl.to(currentTextHover, { color: "#0b1d37", duration: 0.01 }, 0);
-
-    /*
-    tl.to(textA,
-        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
-        0);
-
-    tl.to(textB,
-        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
-        0);
-    
-    tl.to(textC,
-        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
-        0);
-    */
-
-});
+}
 
 // Section 3 #section-c
 $("#section-c").each(function (index) {
@@ -151,19 +120,6 @@ $("#section-c").each(function (index) {
 
     tl.to(currentTextHover, { color: "#0b1d37", duration: 0.01 }, 0);
 
-    /*
-    tl.to(textB,
-        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
-        0);
-
-    tl.to(textC,
-        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
-        0);
-    
-    tl.to(textD,
-        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
-        0);
-    */
 });
 
 // Section 4 #section-d
@@ -200,19 +156,6 @@ $("#section-d").each(function (index) {
 
     tl.to(currentTextHover, { color: "#ffffff", duration: 0.01 }, 0);
 
-    /*
-    tl.to(textC,
-        { className: "scroll-indicator-title-wrapper", color: "#ffffff", duration: 0.01 },
-        0);
-
-    tl.to(textD,
-        { className: "scroll-indicator-title-wrapper", color: "#ffffff", duration: 0.01 },
-        0);
-    
-    tl.to(textE,
-        { className: "scroll-indicator-title-wrapper", color: "#ffffff", duration: 0.01 },
-        0);
-    */
 });
 
 // Section 5 #section-e
@@ -249,19 +192,6 @@ $("#section-e").each(function (index) {
     
     tl.to(currentTextHover, { color: "#0b1d37", duration: 0.01 }, 0);
 
-    /*
-    tl.to(textD,
-        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
-        0);
-
-    tl.to(textE,
-        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
-        0);
-    
-    tl.to(textF,
-        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
-        0);
-    */
 });
 
 // Section 6 #section-f
@@ -291,19 +221,6 @@ $("#section-f").each(function (index) {
 
     tl.to(currentTextHover, { color: "#0b1d37", duration: 0.01 }, 0);
 
-    /*
-    tl.to(textE,
-        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
-        0);
-
-    tl.to(textF,
-        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
-        0);
-    
-    tl.to(textG,
-        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
-        0);
-    */
 });
 
 // Section 7 #section-g
@@ -333,19 +250,6 @@ $("#section-g").each(function (index) {
 
     tl.to(currentTextHover, { color: "#0b1d37", duration: 0.01 }, 0);
     
-    /*
-    tl.to(textF,
-        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
-        0);
-
-    tl.to(textG,
-        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
-        0);
-    
-    tl.to(textH,
-        { className: "scroll-indicator-title-wrapper", color: "#0b1d37", duration: 0.01 },
-        0);
-    */
 });
 
 // Section 8 #section-h
@@ -377,15 +281,7 @@ $("#section-h").each(function (index) {
 
     tl.to(currentTextHover, { color: "#ffffff", duration: 0.01 }, 0);
 
-    /*
-    tl.to(textG,
-        { className: "scroll-indicator-title-wrapper", color: "#ffffff", duration: 0.01 },
-        0);
 
-    tl.to(textH,
-        { className: "scroll-indicator-title-wrapper", color: "#ffffff", duration: 0.01 },
-        0);
-    */
 });
 
 // Section Footer
