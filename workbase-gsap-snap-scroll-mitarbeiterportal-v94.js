@@ -49,6 +49,7 @@ $("#section-a").each(function (index) {
     tl.to(currentTextHover, { color: "#0b1d37", duration: 0.01 }, 0);
 });
 
+// Above 992px
 if (window.matchMedia("(min-width: 992px)").matches) {
     // Section 2 #section-b
     $("#section-b").each(function (index) {
@@ -58,7 +59,8 @@ if (window.matchMedia("(min-width: 992px)").matches) {
         let targetAfter = $("#indicator-c");
 
         let navBar = $(".navbar_component-new");
-        let scrollUp = $(".scrollup-wrapper");
+        let scrollUpDesktop = $(".scrollup-wrapper-desktop");
+        let scrollUpTablet = $(".scrollup-wrapper-tablet");
 
         let currentTextHover = $(".currentcolor");
 
@@ -83,9 +85,14 @@ if (window.matchMedia("(min-width: 992px)").matches) {
             { className: "navbar_component-new is-outviewport", duration: 0.2 },
             0);
 
-        // toggle class is-active to scrollUp
-        tl.to(scrollUp,
-            { className: "scrollup-wrapper is-active", duration: 0.2 },
+        // toggle class is-active to scrollUpDesktop
+        tl.to(scrollUpDesktop,
+            { className: "scrollup-wrapper-desktop is-active", duration: 0.2 },
+            0);
+        
+        // toggle class is-active to scrollUpTablet
+        tl.to(scrollUpTablet,
+            { className: "scrollup-wrapper-tablet", duration: 0.2 },
             0);
         
         tl.to(currentTextHover, { color: "#0b1d37", duration: 0.01 }, 0);
@@ -93,6 +100,7 @@ if (window.matchMedia("(min-width: 992px)").matches) {
     });
 }
 
+// Under 992px
 if (window.matchMedia("(max-width: 992px)").matches) {
     // Section 2 #section-b
     $("#section-b").each(function (index) {
@@ -102,7 +110,8 @@ if (window.matchMedia("(max-width: 992px)").matches) {
         let targetAfter = $("#indicator-c");
 
         let navBar = $(".navbar_component-new");
-        let scrollUp = $(".scrollup-wrapper");
+        let scrollUpDesktop = $(".scrollup-wrapper-desktop");
+        let scrollUpTablet = $(".scrollup-wrapper-tablet");
 
         let currentTextHover = $(".currentcolor");
 
@@ -127,9 +136,14 @@ if (window.matchMedia("(max-width: 992px)").matches) {
             { className: "navbar_component-new", duration: 0.2 },
             0);
 
-        // toggle class is-active to scrollUp
-        tl.to(scrollUp,
-            { className: "scrollup-wrapper is-active", duration: 0.2 },
+        // toggle class is-active to scrollUpDesktop
+        tl.to(scrollUpDesktop,
+            { className: "scrollup-wrapper-desktop", duration: 0.2 },
+            0);
+        
+        // toggle class is-active to scrollUpTablet
+        tl.to(scrollUpTablet,
+            { className: "scrollup-wrapper-tablet is-active", duration: 0.2 },
             0);
         
         tl.to(currentTextHover, { color: "#0b1d37", duration: 0.01 }, 0);
